@@ -1,0 +1,15 @@
+uuid: 091d7d6d-0f07-46a8-ab50-81d2d49fba1d
+name: PetroTau
+mail: harold.moreno@tauconsultores.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

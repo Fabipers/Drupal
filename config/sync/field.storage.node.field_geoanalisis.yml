@@ -1,0 +1,19 @@
+uuid: bf825119-d824-4ffe-acb3-fe85caa11626
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_geoanalisis
+field_name: field_geoanalisis
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

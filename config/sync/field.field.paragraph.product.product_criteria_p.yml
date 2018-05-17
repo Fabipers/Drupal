@@ -1,0 +1,25 @@
+uuid: c90820ec-edce-479c-9226-6db86cfbafe9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_criteria_p
+    - paragraphs.paragraphs_type.product
+_core:
+  default_config_hash: ypfeF5OK2Mmurfzk7F_9dqF2q8OLhCrOgiu7dKgwBy4
+id: paragraph.product.product_criteria_p
+field_name: product_criteria_p
+entity_type: paragraph
+bundle: product
+label: 'Product criteria P#'
+description: 'P1, P2, P3, etc. values'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

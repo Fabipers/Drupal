@@ -1,0 +1,28 @@
+uuid: e156fb23-5fa7-42fd-b248-87c9099272ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_capa
+    - node.type.capa
+    - paragraphs.paragraphs_type.modulo
+id: paragraph.modulo.field_capa
+field_name: field_capa
+entity_type: paragraph
+bundle: modulo
+label: Capa
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      capa: capa
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

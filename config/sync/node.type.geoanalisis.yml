@@ -1,0 +1,17 @@
+uuid: a8392cdf-4aeb-4f93-854c-4f4a6687fb8e
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Geoanalisis
+type: geoanalisis
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

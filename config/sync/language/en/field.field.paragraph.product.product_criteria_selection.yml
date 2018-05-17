@@ -1,0 +1,5 @@
+label: 'Product criteria selection'
+description: 'Represents the select criteria with "x" if is true.'
+settings:
+  on_label: 'On'
+  off_label: 'Off'

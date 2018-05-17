@@ -1,0 +1,39 @@
+uuid: 596c6ec1-0235-49f5-b6d1-cb22c7cf0456
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sub_program_product
+    - paragraphs.paragraphs_type.product
+    - paragraphs.paragraphs_type.sub_program
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: p--NqGLbpA-UYAiVRCSuoIS055QfiOMeIg1Qjx7Y1tA
+id: paragraph.sub_program.sub_program_product
+field_name: sub_program_product
+entity_type: paragraph
+bundle: sub_program
+label: Product
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      product: product
+    target_bundles_drag_drop:
+      product:
+        enabled: true
+        weight: 3
+      sub_program:
+        weight: 4
+        enabled: false
+      year_information:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

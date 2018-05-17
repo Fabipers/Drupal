@@ -1,0 +1,55 @@
+label: 'Graphics PSP'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        sub_program_description:
+          separator: ', '
+        product_programmed_value:
+          label: 'TOTAL PROGRAMADO CUATRIENIO'
+          separator: ', '
+        product_total_executed:
+          label: 'TOTAL EJECUTADO CUATRIENIO O FRACCIÓN'
+          separator: ', '
+      filters:
+        product_priority_level_target_id:
+          expose:
+            label: 'Nivel de prioridad Meta Producto'
+        product_responsible_entity_target_id:
+          expose:
+            label: 'Entidad Responsable'
+  block_1:
+    display_title: 'Graphic PSP 1'
+  block_2:
+    display_title: 'Graphic PSP 2'
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        product_programmed_value:
+          label: 'TOTAL PROGRAMADO CUATRIENIO'
+          separator: ', '
+        product_total_executed:
+          label: 'TOTAL EJECUTADO CUATRIENIO O FRACCIÓN'
+          separator: ', '
+      filters:
+        program_sub_program_target_id:
+          expose:
+            label: SUBPROGRAMA
+        product_periodicity_target_id:
+          expose:
+            label: Periodicidad
+        product_priority_level_target_id:
+          expose:
+            label: 'Nivel de prioridad Meta Producto'
+        product_responsible_entity_target_id:
+          expose:
+            label: 'Entidad Responsable'

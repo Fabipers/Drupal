@@ -1,0 +1,11 @@
+uuid: d634d2e7-45cf-4fc8-b6a9-d0e5fc55510a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.capa
+id: node.capa
+target_entity_type_id: node
+target_bundle: capa
+default_langcode: site_default
+language_alterable: false

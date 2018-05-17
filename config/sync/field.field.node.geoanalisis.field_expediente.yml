@@ -1,0 +1,29 @@
+uuid: b9e0797c-fa47-447c-b972-0e25f092adf7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expediente
+    - node.type.geoanalisis
+    - taxonomy.vocabulary.expediente_municipal_digital
+id: node.geoanalisis.field_expediente
+field_name: field_expediente
+entity_type: node
+bundle: geoanalisis
+label: 'Expediente Municipal Digital'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      expediente_municipal_digital: expediente_municipal_digital
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

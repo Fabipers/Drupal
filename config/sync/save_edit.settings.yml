@@ -1,0 +1,20 @@
+button_value: 'Save & Edit'
+button_weight: '-1'
+dropbutton: 1
+hide_default_save: 0
+unpublish: 0
+unpublish_new_only: 0
+_core:
+  default_config_hash: oQZEEa6YecXPaDLQamDtBIPnSB-OUvoRLlq9vY4OlwQ
+langcode: es
+hide_default_publish: 0
+hide_default_preview: 0
+hide_default_delete: 0
+node_types:
+  program: program
+  article: 0
+  bloque: 0
+  capa: 0
+  geoanalisis: 0
+  iframe_arcgis: 0
+  page: 0

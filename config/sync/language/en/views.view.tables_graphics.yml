@@ -1,0 +1,61 @@
+label: 'Tables Graphics'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        sub_program_description:
+          separator: ', '
+        product_programmed_value:
+          label: 'TOTAL PROGRAMADO CUATRIENIO'
+          separator: ', '
+        product_total_executed:
+          label: 'TOTAL EJECUTADO CUATRIENIO O FRACCIÓN'
+          separator: ', '
+  block_1:
+    display_title: 'Graphic 1'
+  block_2:
+    display_title: 'Graphic 2'
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        product_programmed_value:
+          label: 'TOTAL PROGRAMADO CUATRIENIO'
+          separator: ', '
+        product_total_executed:
+          label: 'TOTAL EJECUTADO CUATRIENIO O FRACCIÓN'
+          separator: ', '
+  block_3:
+    display_title: 'Graphic 3'
+    display_options:
+      fields:
+        sub_program_description:
+          separator: ', '
+        name:
+          separator: ', '
+        year_info_programmed_value:
+          label: 'Valor programado'
+          separator: ', '
+        year_info_total_executed:
+          label: 'Total ejecutado'
+          separator: ', '
+  block_4:
+    display_title: 'Graphic 4'
+    display_options:
+      fields:
+        sub_program_description:
+          separator: ', '
+        year_info_programmed_value:
+          label: 'Valor programado'
+          separator: ', '
+        year_info_total_executed:
+          label: 'Total ejecutado'
+          separator: ', '

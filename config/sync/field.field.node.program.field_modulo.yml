@@ -1,0 +1,29 @@
+uuid: 6d64412b-9ff4-4acd-ad4a-fc3f8d3629ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modulo
+    - node.type.program
+    - taxonomy.vocabulary.modulo_territorium
+id: node.program.field_modulo
+field_name: field_modulo
+entity_type: node
+bundle: program
+label: Modulo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      modulo_territorium: modulo_territorium
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

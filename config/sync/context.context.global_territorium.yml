@@ -1,0 +1,62 @@
+uuid: 1fe9fba7-3c97-41ba-a479-956aad4d5928
+langcode: es
+status: true
+dependencies:
+  module:
+    - petrotau_general
+    - system
+name: global_territorium
+label: 'Global Territorium'
+group: global
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  current_theme:
+    id: current_theme
+    theme: petrotau_theme
+    negate: 0
+    uuid: 07587132-2dc8-41a4-87cf-c020d7ac3076
+    context_mapping: {  }
+  its_home:
+    id: its_home
+    home:
+      2: '2'
+      1: 0
+    negate: 0
+    uuid: 59f9cc2e-d7ba-4835-853f-2771465e04b7
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      1989ec65-f853-49ff-ae82-787584d18401:
+        id: TMenuLoggedIn
+        label: 'Territorium Menu Logged In'
+        provider: territorium_general
+        label_display: 0
+        region: primary_menu
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: global_territorium
+        uuid: 1989ec65-f853-49ff-ae82-787584d18401
+      742a7e0d-6a71-461e-8870-9afb67dc3fea:
+        id: PortalLogo
+        label: 'Logo Portal'
+        provider: petrotau_general
+        label_display: 0
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: global_territorium
+        uuid: 742a7e0d-6a71-461e-8870-9afb67dc3fea
+    id: blocks
+    saved: false
+    uuid: d64ae4de-e1e9-4844-8bb6-493e0ef8b854
+    include_default_blocks: 0
+weight: 0

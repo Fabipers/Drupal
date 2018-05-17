@@ -1,0 +1,29 @@
+uuid: a6936c1c-0315-4688-962e-f17e2c0acaaf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modulo
+    - node.type.geoanalisis
+    - taxonomy.vocabulary.modulo_territorium
+id: node.geoanalisis.field_modulo
+field_name: field_modulo
+entity_type: node
+bundle: geoanalisis
+label: Modulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      modulo_territorium: modulo_territorium
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

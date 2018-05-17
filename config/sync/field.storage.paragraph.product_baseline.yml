@@ -1,0 +1,23 @@
+uuid: 05000ce6-02a5-4b49-b93f-3fc2a1dd24e1
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: MgJj_keRP9WoJjhvbxWaOdMejufYDcig_xC___znBPM
+id: paragraph.product_baseline
+field_name: product_baseline
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

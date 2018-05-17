@@ -1,0 +1,59 @@
+uuid: e15e120e-4501-439b-b53b-de3fe4969958
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+name: landing_module
+label: 'Landing Module'
+group: Grupo
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  current_theme:
+    id: current_theme
+    theme: petrotau_theme
+    negate: 0
+    uuid: 7128f6c4-d50f-4716-8852-c98849f3a84c
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '/group/*/node/*/module/*'
+    negate: 0
+    uuid: 0556f002-4079-4d0e-a12a-b5ca82a05d55
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      e49d7990-24da-4118-8a51-d78d9e314c44:
+        id: RelationModules
+        label: 'Modulos relacionados'
+        provider: petrotau_group
+        label_display: 0
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: landing_module
+        uuid: e49d7990-24da-4118-8a51-d78d9e314c44
+      65624345-23b9-41fe-98b7-ed527b21c613:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: landing_module
+        uuid: 65624345-23b9-41fe-98b7-ed527b21c613
+    id: blocks
+    saved: false
+    uuid: c81ce111-03fa-44b6-aad6-e53de647e886
+    include_default_blocks: 0
+weight: 0

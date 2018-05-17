@@ -1,0 +1,31 @@
+uuid: 6baae96e-00b7-43d3-8832-ecf22d824734
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_priority_level
+    - paragraphs.paragraphs_type.product
+    - taxonomy.vocabulary.priority_level
+_core:
+  default_config_hash: rUcXCbvziyrltUwNTrDEKRuZOtzxf8W-S0jvs9tGgCM
+id: paragraph.product.product_priority_level
+field_name: product_priority_level
+entity_type: paragraph
+bundle: product
+label: 'Priority level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      priority_level: priority_level
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

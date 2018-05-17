@@ -1,0 +1,8 @@
+uuid: 4085bd66-1d73-4ee6-ad81-b206f0e5ceb1
+langcode: es
+status: true
+dependencies: {  }
+id: videos_territorium
+label: 'Videos territorium'
+revision: 0
+description: 'Ponga acá los videos para el slider del home'

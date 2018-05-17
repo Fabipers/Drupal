@@ -1,0 +1,17 @@
+id: plan_de_desarrollo_municipal
+label: 'Plan de Desarrollo Municipal'
+ui_limit: ''
+properties:
+  block: 'views_block:territorium_modulos-block_2'
+  use_block_title: false
+  config:
+    id: 'views_block:territorium_modulos-block_2'
+    label: ''
+    provider: views
+    label_display: visible
+    views_label: ''
+    items_per_page: none
+type: block
+type_label: 'Block field'
+entities:
+  group: group

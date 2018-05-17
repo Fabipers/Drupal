@@ -1,0 +1,25 @@
+uuid: 97c7a6d9-0d5c-45ce-b914-6ad97a6a5c27
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_total_executed
+    - paragraphs.paragraphs_type.product
+_core:
+  default_config_hash: G1TxreoqSLsp1Tz1zEME4R060ah6HGeaIDSLkBO5ke0
+id: paragraph.product.product_total_executed
+field_name: product_total_executed
+entity_type: paragraph
+bundle: product
+label: 'Total executed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

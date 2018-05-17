@@ -1,0 +1,101 @@
+uuid: 56620b14-0745-473d-9932-4685b27eeb35
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - views.view.graphics_psp
+    - views.view.tables_graphics
+  module:
+    - ctools
+    - views
+_core:
+  default_config_hash: oiX-1wps02URVAgWoawuSL-K8Xal6yBdft60VmzhnoE
+id: node_view-block_display-0
+label: Program
+variant: block_display
+variant_settings:
+  blocks:
+    f75cd10a-48b6-4373-a0bb-28f4f8e534f9:
+      id: 'views_block:graphics_psp-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: -10
+      uuid: f75cd10a-48b6-4373-a0bb-28f4f8e534f9
+      context_mapping: {  }
+    189e8a00-3d92-4dd3-8d89-1f4af0e4b866:
+      id: 'views_block:graphics_psp-block_2'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: -9
+      uuid: 189e8a00-3d92-4dd3-8d89-1f4af0e4b866
+      context_mapping: {  }
+    e57d20d2-7801-4f75-9e6d-e25accd18492:
+      id: 'views_block:tables_graphics-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: -8
+      uuid: e57d20d2-7801-4f75-9e6d-e25accd18492
+      context_mapping: {  }
+    998037ca-eef6-4755-baf5-a0d03b0266af:
+      id: 'views_block:tables_graphics-block_2'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: -7
+      uuid: 998037ca-eef6-4755-baf5-a0d03b0266af
+      context_mapping: {  }
+    ea6f5dd4-9478-4c0b-a1ce-7f7079afae01:
+      id: 'views_block:tables_graphics-block_3'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: -6
+      uuid: ea6f5dd4-9478-4c0b-a1ce-7f7079afae01
+      context_mapping: {  }
+    a92c5774-171f-48ab-90eb-fe3c974341f6:
+      id: 'views_block:tables_graphics-block_4'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: -5
+      uuid: a92c5774-171f-48ab-90eb-fe3c974341f6
+      context_mapping: {  }
+  id: block_display
+  uuid: 7d37a4f5-9685-4551-ab44-bbb85e36ef56
+  label: null
+  weight: 0
+  page_title: ''
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      program: program
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

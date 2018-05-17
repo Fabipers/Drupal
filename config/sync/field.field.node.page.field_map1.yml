@@ -1,0 +1,29 @@
+uuid: 3ac6cd65-e043-4451-ae30-72e704792fa4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map1
+    - node.type.page
+  module:
+    - iframe
+id: node.page.field_map1
+field_name: field_map1
+entity_type: node
+bundle: page
+label: map
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: ''
+  frameborder: '0'
+  scrolling: auto
+  transparency: '0'
+  tokensupport: '0'
+  title: ''
+  height: ''
+  width: ''
+field_type: iframe

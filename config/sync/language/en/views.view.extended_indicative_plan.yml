@@ -1,0 +1,115 @@
+label: 'Extended indicative plan'
+description: 'All Program infomation.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        sub_program_code:
+          label: 'Código Subprograma'
+          separator: ', '
+        product_code:
+          label: 'Código Producto'
+          separator: ', '
+        product_priority_code:
+          label: 'Código Priorización Producto'
+          separator: ', '
+        sub_program_description:
+          label: SUBPROGRAMA
+          separator: ', '
+        product_description:
+          label: 'Descripción Meta Producto'
+          separator: ', '
+        product_periodicity:
+          label: Periodicidad
+          separator: ', '
+        product_code_2:
+          label: 'Código Producto2'
+          separator: ', '
+        product_goal_status:
+          label: 'Estado meta producto'
+          separator: ', '
+        product_priority_level:
+          label: 'Nivel de prioridad Meta Producto'
+          separator: ', '
+        product_priority_index:
+          label: 'Ind Prio'
+          separator: ', '
+        product_criteria_p:
+          label: 'P#'
+          separator: ', '
+        product_criteria_selection:
+          label: 'Product criteria selection'
+          settings:
+            format_custom_true: X
+          separator: ', '
+        product_product:
+          label: Productos
+          separator: ', '
+        product_indicator:
+          label: 'Indicador de Producto'
+          separator: ', '
+        product_accumulation_type:
+          label: 'Tipo acumulacion'
+          separator: ', '
+        product_baseline:
+          label: 'Línea Base Producto'
+          separator: ', '
+        product_year:
+          label: Años
+          alter:
+            text: '{{ product_year__target_id }}'
+          separator: ', '
+        product_responsible_entity:
+          label: 'Entidad Responsable'
+          separator: ', '
+        product_drop_down_lists:
+          label: 'Listas desplegables'
+          separator: ', '
+        product_year_goal:
+          label: 'Year goal summary'
+          separator: ', '
+        product_year_achievement:
+          label: 'Year achievement summary'
+          separator: ', '
+        product_year_efficacy:
+          label: 'Year efficacy (product_year_achievement / product_year_goal) summary'
+          separator: ', '
+        product_goal:
+          label: 'Product goal'
+          separator: ', '
+        product_achievement:
+          label: 'Product achievement'
+          separator: ', '
+        product_efficacy:
+          label: 'Product efficacy (product_achievement / product_goal)'
+          separator: ', '
+        product_year_programmed_value:
+          label: 'Year programmed value summary'
+          separator: ', '
+        product_year_total_executed:
+          label: 'Year total executed summary'
+          separator: ', '
+        product_year_efficacy_2:
+          label: 'Year efficacy 2 (product_year_total_executed / product_year_programmed_value) summary'
+          separator: ', '
+        product_programmed_value:
+          label: 'Programmed value'
+          separator: ', '
+        product_total_executed:
+          label: 'Total executed'
+          separator: ', '
+        product_efficacy_2:
+          label: 'Product efficacy 2 (product_total_executed / product_programmed_value)'
+          separator: ', '
+  block_1:
+    display_title: Block
+  page_1:
+    display_title: Page

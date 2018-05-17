@@ -1,0 +1,22 @@
+uuid: 791bc0ee-1812-4348-8bf3-053aea7cf1f8
+langcode: es
+status: true
+dependencies:
+  theme:
+    - petrotau_theme
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: petrotau_theme_local_tasks
+theme: petrotau_theme
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

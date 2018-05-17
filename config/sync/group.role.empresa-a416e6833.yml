@@ -1,0 +1,17 @@
+uuid: 97550508-3d2c-4414-b97e-47cb0afbfba6
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresa
+  enforced:
+    config:
+      - user.role.administrator
+id: empresa-a416e6833
+label: Administrador
+weight: 2
+internal: true
+audience: outsider
+group_type: empresa
+permissions_ui: false
+permissions: {  }

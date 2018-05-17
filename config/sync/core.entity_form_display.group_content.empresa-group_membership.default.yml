@@ -1,0 +1,44 @@
+uuid: 69f47bcd-595e-49de-a471-b506e5b6dbc7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.group_content.empresa-group_membership.group_roles
+    - group.content_type.empresa-group_membership
+  module:
+    - path
+id: group_content.empresa-group_membership.default
+targetEntityType: group_content
+bundle: empresa-group_membership
+mode: default
+content:
+  entity_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  group_roles:
+    type: options_buttons
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

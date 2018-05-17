@@ -1,0 +1,22 @@
+label: 'Product year'
+description: ' Gets the available years that can be referenced on products'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        name:
+          separator: ', '
+      arguments:
+        nid:
+          exception:
+            title: All
+  entity_reference_1:
+    display_title: 'Entity Reference'

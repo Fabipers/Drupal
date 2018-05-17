@@ -1,0 +1,22 @@
+uuid: 8c908ace-2dc6-426e-8ebf-5536350338ce
+langcode: es
+status: true
+dependencies:
+  module:
+    - feeds
+    - taxonomy
+_core:
+  default_config_hash: OA8DQ3osljEqIEtg9kvAAGzmxtCrw4L1tzGZwhXV4XY
+id: feeds_feed.program_import_criteria
+field_name: program_import_criteria
+entity_type: feeds_feed
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

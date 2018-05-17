@@ -1,0 +1,29 @@
+uuid: ac027929-5ac7-41f3-b782-cea3ca7ce6b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expediente
+    - node.type.program
+    - taxonomy.vocabulary.expediente_municipal_digital
+id: node.program.field_expediente
+field_name: field_expediente
+entity_type: node
+bundle: program
+label: 'Expediente Municipal Digital'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      expediente_municipal_digital: expediente_municipal_digital
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

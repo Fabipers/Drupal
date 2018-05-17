@@ -1,0 +1,17 @@
+uuid: d3e87246-a68e-4347-a88d-b87892f4497c
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.territorium
+  module:
+    - user
+id: territorium-group_membership
+label: 'Territorium: Group membership'
+description: 'Adds users to groups as members.'
+group_type: territorium
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

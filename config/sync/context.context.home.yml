@@ -1,0 +1,120 @@
+uuid: 83cee2f6-b7b6-4139-aa97-05a50f25f294
+langcode: es
+status: true
+dependencies:
+  module:
+    - petrotau_general
+    - system
+name: home
+label: 'Home petrotau'
+group: Home
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  current_theme:
+    id: current_theme
+    theme: petrotau_theme
+    negate: 0
+    uuid: 42d5f40a-46fa-48dc-8088-e5edb7799f75
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: 0
+    uuid: 75391eac-c3dd-4675-8e7d-291d9b0f25b5
+    context_mapping: {  }
+  its_home:
+    id: its_home
+    home:
+      1: '1'
+      2: 0
+    negate: 0
+    uuid: 56785be6-9373-4008-98b2-c2e87581dd3c
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      5546d0c1-2c4e-4e70-ad04-73056aa5c44f:
+        id: HomeHeader
+        label: 'Home Header'
+        provider: petrotau_general
+        label_display: 0
+        region: content_top
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: home
+        uuid: 5546d0c1-2c4e-4e70-ad04-73056aa5c44f
+      6148ed88-1a81-4600-890e-9a9e5ad7619a:
+        id: HomeFeatures
+        label: 'Home Features'
+        provider: petrotau_general
+        label_display: 0
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: container
+        unique: 0
+        context_id: home
+        uuid: 6148ed88-1a81-4600-890e-9a9e5ad7619a
+      1c770720-9f5d-42e4-8f08-0329533147f8:
+        id: HomeSlider
+        label: 'Home Slider'
+        provider: petrotau_general
+        label_display: 0
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: col-sm-12
+        unique: 0
+        context_id: home
+        uuid: 1c770720-9f5d-42e4-8f08-0329533147f8
+      fc2821ed-73a9-4cae-8684-fa0a2f607737:
+        id: HomeModules
+        label: 'Home Modules'
+        provider: petrotau_general
+        label_display: 0
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: container
+        unique: 0
+        context_id: home
+        uuid: fc2821ed-73a9-4cae-8684-fa0a2f607737
+      11526694-7383-4a8c-a773-b1368878a2d8:
+        id: HomeMap
+        label: 'Home Map'
+        provider: petrotau_general
+        label_display: 0
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: col-sm-12
+        unique: 0
+        context_id: home
+        uuid: 11526694-7383-4a8c-a773-b1368878a2d8
+      5dcd0845-8ec9-408f-8272-ef59d7fb60a9:
+        id: HomeFooter
+        label: 'Home Footer'
+        provider: petrotau_general
+        label_display: 0
+        region: footer
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: home
+        uuid: 5dcd0845-8ec9-408f-8272-ef59d7fb60a9
+    id: blocks
+    saved: false
+    uuid: f19314a9-7586-41a1-a133-df65d080d3ff
+    include_default_blocks: 0
+weight: 0

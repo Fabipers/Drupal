@@ -1,0 +1,11 @@
+uuid: ec555388-2108-4cdf-80b2-98df2c57a479
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: a5RG_OUJdbHd8qbKFZG1y823OwDFwKA_U79Q_ncWbKQ
+name: Criteria
+vid: criteria
+description: ''
+hierarchy: 0
+weight: 0

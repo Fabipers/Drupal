@@ -1,0 +1,25 @@
+uuid: 208114e1-a1d5-47cb-b5ba-0146750f9738
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.year_info_achievement
+    - paragraphs.paragraphs_type.year_information
+_core:
+  default_config_hash: OIlARGh1S_LHO4ZhRQ0qYk3f2gQngRqIY0blsAi90LY
+id: paragraph.year_information.year_info_achievement
+field_name: year_info_achievement
+entity_type: paragraph
+bundle: year_information
+label: Achievement
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

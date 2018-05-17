@@ -1,0 +1,27 @@
+uuid: 24ba3975-55f3-4d02-9429-31394dc23cd8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_geojson
+    - group.type.empresa
+  module:
+    - file
+id: group.empresa.field_geojson
+field_name: field_geojson
+entity_type: group
+bundle: empresa
+label: Geojson
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: geojson
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

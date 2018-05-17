@@ -1,0 +1,83 @@
+values:
+  cabecera: 'Bienvenido a PetroTAU'
+  slogan: 'Consulta, Administra y Planea fácilmente.'
+  images:
+    - '12'
+  save: Guardar
+  form_build_id: form-zWkoTH8qDi0O-rIHTQcVW7Ca0XEkbHnIqGu4LrwEyIQ
+  form_token: SsZS0s4L68IPFD9MpU0_JHTTrKiVdaJgPGDuhvxDDQ4
+  form_id: petrotau_general_config
+  op: Guardar
+header:
+  cabecera: 'BIENVENIDO A PETROTAU'
+  slogan: 'Consulta, Administra y Planea fácilmente.'
+  images:
+    - '13'
+features:
+  accommodation_0:
+    title: 'Expediente empresarial'
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since.'
+  accommodation_1:
+    title: 'Trabajo de nuestros expertos integrado con ArcGis'
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since.'
+  accommodation_2:
+    title: 'Accesos a recursos basados en roles y usuarios'
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since.'
+  accommodation_3:
+    title: 'Planeación online'
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since.'
+  accommodation_4:
+    title: 'Módulos especializados'
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since.'
+  accommodation_5:
+    title: 'Accesos a nuevos módulos y caracteristicas'
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since.'
+  accommodation_6:
+    title: ''
+    text: ''
+slider:
+  sl1:
+    title: 'Vérsatil y Fácil de usar!'
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer  galley of type and scrambled it to make a type specimen book. '
+  sl2:
+    title: 'Información y Funcionalidad Online'
+    text: 'Toda la información, todos los datos, en todos lados'
+  sl3:
+    title: '1000+ Mapas y capas'
+    text: 'Design looks good on phones, computers and tablets'
+modules:
+  md_0:
+    link: 'https://dev-54ta5gq-h2gxzfidskroi.us.platform.sh/'
+    text_link: Tierra
+    ico:
+      - '14'
+  md_1:
+    link: 'https://dev-54ta5gq-h2gxzfidskroi.us.platform.sh/'
+    text_link: Ambiental
+    ico:
+      - '15'
+  md_2:
+    link: 'https://dev-54ta5gq-h2gxzfidskroi.us.platform.sh/'
+    text_link: Comunidades
+    ico:
+      - '16'
+  md_3:
+    link: 'https://dev-54ta5gq-h2gxzfidskroi.us.platform.sh/'
+    text_link: 'Obras Civiles'
+    ico:
+      - '17'
+  md_4:
+    link: ''
+    text_link: ''
+    ico: {  }
+map:
+  title: 'Administrar todos los bloques'
+  geojson:
+    - '18'
+footer:
+  text: 'Consulta, administra y planea fácilmente acompañado de los mejores consultores.'
+others:
+  img_profile:
+    - '19'
+  logo:
+    - '62'

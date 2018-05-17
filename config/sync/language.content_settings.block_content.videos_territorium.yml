@@ -1,0 +1,11 @@
+uuid: ab7a3651-f841-4244-bab8-4a3691c8581c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.videos_territorium
+id: block_content.videos_territorium
+target_entity_type_id: block_content
+target_bundle: videos_territorium
+default_langcode: site_default
+language_alterable: false

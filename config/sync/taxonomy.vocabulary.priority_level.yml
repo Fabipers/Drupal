@@ -1,0 +1,11 @@
+uuid: 6e007283-ab3a-409f-b1f7-a4845d04adce
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EX3YgwAg1FBtUfSZPEgfUOXyFw4ti0FxWbI7cdzadCg
+name: 'Priority level'
+vid: priority_level
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,156 @@
+uuid: ab4303c7-0d01-4d8b-9cee-27ceb9bb695e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.group_content.territorium-group_node-program.field_geoanalisis
+    - group.content_type.territorium-group_node-program
+  module:
+    - ds
+    - field_group
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - group_submenu_container
+        - territorium_sub_menu
+        - group_program_map
+        - 'dynamic_block_field:group_content-program_map'
+        - 'dynamic_block_field:group_content-graphics_psp_graphic_psp_1'
+        - 'dynamic_block_field:group_content-tables_graphics_graphic_1'
+        - 'dynamic_block_field:group_content-graphics_psp_graphic_psp_2'
+        - 'dynamic_block_field:group_content-tables_graphics_graphic_2'
+        - group_filters_and_graphics
+        - group_slider_wrapper
+        - 'dynamic_block_field:group_content-tables_graphics_graphic_3'
+        - 'dynamic_block_field:group_content-tables_graphics_graphic_4'
+    fields:
+      territorium_sub_menu:
+        plugin_id: territorium_sub_menu
+        weight: 1
+        label: hidden
+        formatter: default
+      'dynamic_block_field:group_content-graphics_psp_graphic_psp_1':
+        plugin_id: 'dynamic_block_field:group_content-graphics_psp_graphic_psp_1'
+        weight: 3
+        label: above
+        formatter: default
+      'dynamic_block_field:group_content-graphics_psp_graphic_psp_2':
+        plugin_id: 'dynamic_block_field:group_content-graphics_psp_graphic_psp_2'
+        weight: 4
+        label: hidden
+        formatter: default
+      'dynamic_block_field:group_content-program_map':
+        plugin_id: 'dynamic_block_field:group_content-program_map'
+        weight: 2
+        label: hidden
+        formatter: default
+      'dynamic_block_field:group_content-tables_graphics_graphic_1':
+        plugin_id: 'dynamic_block_field:group_content-tables_graphics_graphic_1'
+        weight: 4
+        label: hidden
+        formatter: default
+      'dynamic_block_field:group_content-tables_graphics_graphic_2':
+        plugin_id: 'dynamic_block_field:group_content-tables_graphics_graphic_2'
+        weight: 5
+        label: hidden
+        formatter: default
+      'dynamic_block_field:group_content-tables_graphics_graphic_3':
+        plugin_id: 'dynamic_block_field:group_content-tables_graphics_graphic_3'
+        weight: 6
+        label: hidden
+        formatter: default
+      'dynamic_block_field:group_content-tables_graphics_graphic_4':
+        plugin_id: 'dynamic_block_field:group_content-tables_graphics_graphic_4'
+        weight: 7
+        label: hidden
+        formatter: default
+  field_group:
+    group_filters_and_graphics:
+      children:
+        - group_slider_wrapper
+      parent_name: group_program_map
+      weight: 5
+      format_type: html_element
+      format_settings:
+        label: 'FIlters and graphics'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'filter-graphics swiper-container'
+      label: 'FIlters and graphics'
+    group_slider_wrapper:
+      children:
+        - 'dynamic_block_field:group_content-tables_graphics_graphic_1'
+        - 'dynamic_block_field:group_content-tables_graphics_graphic_2'
+        - 'dynamic_block_field:group_content-tables_graphics_graphic_3'
+        - 'dynamic_block_field:group_content-tables_graphics_graphic_4'
+      parent_name: group_filters_and_graphics
+      weight: 6
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: swiper-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: slider-wrapper
+    group_program_map:
+      children:
+        - 'dynamic_block_field:group_content-program_map'
+        - 'dynamic_block_field:group_content-graphics_psp_graphic_psp_1'
+        - 'dynamic_block_field:group_content-graphics_psp_graphic_psp_2'
+        - group_filters_and_graphics
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: program-map-program
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Programa - mapa'
+    group_submenu_container:
+      children:
+        - territorium_sub_menu
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'Submenu container'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'container submenu-items'
+      label: 'Submenu container'
+id: group_content.territorium-group_node-program.default
+targetEntityType: group_content
+bundle: territorium-group_node-program
+mode: default
+content: {  }
+hidden:
+  entity_id: true
+  field_geoanalisis: true
+  langcode: true
+  uid: true

@@ -1,0 +1,148 @@
+uuid: 7aff6199-887f-4a1d-a397-8c4bc01eac01
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.group.territorium.field_expiracion
+    - field.field.group.territorium.field_imagen_plan_1
+    - field.field.group.territorium.field_imagen_plan_2
+    - field.field.group.territorium.field_imagen_principal
+    - field.field.group.territorium.field_logo
+    - group.type.territorium
+  module:
+    - ds
+    - field_group
+    - image
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_logo
+        - group_content_top
+        - territorium_logo
+        - field_imagen_principal
+        - 'dynamic_block_field:group-expediente_municipal_digital'
+        - territorium_expediente
+        - 'dynamic_block_field:group-plan_de_desarrollo_municipal'
+        - field_imagen_plan_1
+        - field_imagen_plan_2
+        - FieldModuloPlanDesarrolloLink
+        - 'dynamic_block_field:group-articulacion_pot_pdm'
+        - FieldModuloArticulacionPOTPDMLink
+    fields:
+      FieldModuloArticulacionPOTPDMLink:
+        plugin_id: FieldModuloArticulacionPOTPDMLink
+        weight: 11
+        label: hidden
+        formatter: default
+      territorium_expediente:
+        plugin_id: territorium_expediente
+        weight: 5
+        label: hidden
+        formatter: default
+      FieldModuloPlanDesarrolloLink:
+        plugin_id: FieldModuloPlanDesarrolloLink
+        weight: 9
+        label: hidden
+        formatter: default
+      territorium_logo:
+        plugin_id: territorium_logo
+        weight: 1
+        label: hidden
+        formatter: default
+      'dynamic_block_field:group-articulacion_pot_pdm':
+        plugin_id: 'dynamic_block_field:group-articulacion_pot_pdm'
+        weight: 10
+        label: hidden
+        formatter: default
+      'dynamic_block_field:group-expediente_municipal_digital':
+        plugin_id: 'dynamic_block_field:group-expediente_municipal_digital'
+        weight: 4
+        label: hidden
+        formatter: default
+      'dynamic_block_field:group-plan_de_desarrollo_municipal':
+        plugin_id: 'dynamic_block_field:group-plan_de_desarrollo_municipal'
+        weight: 6
+        label: hidden
+        formatter: default
+  field_group:
+    group_content_top:
+      children:
+        - field_logo
+        - territorium_logo
+        - field_imagen_principal
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: content-top-featured
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Content top'
+id: group.territorium.default
+targetEntityType: group
+bundle: territorium
+mode: default
+content:
+  field_imagen_plan_1:
+    weight: 7
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  field_imagen_plan_2:
+    weight: 8
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  field_imagen_principal:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  field_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+hidden:
+  changed: true
+  created: true
+  field_expiracion: true
+  label: true
+  langcode: true
+  uid: true

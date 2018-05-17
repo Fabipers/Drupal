@@ -1,0 +1,11 @@
+uuid: a249fd59-a1a8-49a6-8f1b-3a9d070d678f
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xu-W8O-4cbtsNENzXnqC9cePbA34WiXU-bAKFxqc3M0
+name: 'Responsible entity'
+vid: responsible_entity
+description: ''
+hierarchy: 0
+weight: 0

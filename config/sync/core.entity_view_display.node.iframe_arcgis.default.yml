@@ -1,0 +1,62 @@
+uuid: 822bd287-8a8c-405d-9c46-e642148c81c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.iframe_arcgis.field_geoanalisis
+    - field.field.node.iframe_arcgis.field_map
+    - node.type.iframe_arcgis
+  module:
+    - ds
+    - iframe
+    - link
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_geoanalisis
+        - field_map
+id: node.iframe_arcgis.default
+targetEntityType: node
+bundle: iframe_arcgis
+mode: default
+content:
+  field_geoanalisis:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_map:
+    weight: 1
+    label: hidden
+    settings:
+      url: ''
+      title: ''
+      width: ''
+      height: ''
+      class: ''
+      expose_class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      tokensupport: '0'
+    third_party_settings: {  }
+    type: iframe_default
+    region: content
+hidden:
+  langcode: true
+  links: true

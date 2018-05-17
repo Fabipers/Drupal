@@ -1,0 +1,27 @@
+uuid: 7d03cd58-706e-48e3-a3ac-3ad433526adf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geojson
+    - node.type.capa
+  module:
+    - file
+id: node.capa.field_geojson
+field_name: field_geojson
+entity_type: node
+bundle: capa
+label: GeoJson
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'geojson json'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,17 @@
+uuid: 9fee0adb-0123-403a-a5d4-c7a4ed8a92fc
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access in-place editing'
+  - 'access site-wide contact form'
+  - 'administer petrotau_main_menu'
+  - 'search content'
+  - 'use text format restricted_html'

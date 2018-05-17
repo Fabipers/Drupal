@@ -1,0 +1,63 @@
+uuid: 241acf2b-416a-4a87-a695-a728da02c2a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.group.empresa.field_expiracion
+    - field.field.group.empresa.field_geojson
+    - field.field.group.empresa.field_iframe
+    - field.field.group.empresa.field_logo
+    - group.type.empresa
+  module:
+    - ds
+    - iframe
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_iframe
+id: group.empresa.default
+targetEntityType: group
+bundle: empresa
+mode: default
+content:
+  field_iframe:
+    weight: 0
+    label: hidden
+    settings:
+      url: ''
+      title: ''
+      width: ''
+      height: ''
+      class: ''
+      expose_class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      tokensupport: '0'
+    third_party_settings: {  }
+    type: iframe_default
+    region: ds_content
+hidden:
+  changed: true
+  created: true
+  field_expiracion: true
+  field_geojson: true
+  field_logo: true
+  label: true
+  langcode: true
+  uid: true

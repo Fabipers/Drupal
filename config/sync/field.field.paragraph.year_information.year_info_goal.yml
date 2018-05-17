@@ -1,0 +1,25 @@
+uuid: 6557ac91-66af-46ab-813d-f35b2d9dd057
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.year_info_goal
+    - paragraphs.paragraphs_type.year_information
+_core:
+  default_config_hash: 32plo0zpNa-S5FkvCog21UYoi_5J9T7deyva7KX-GY8
+id: paragraph.year_information.year_info_goal
+field_name: year_info_goal
+entity_type: paragraph
+bundle: year_information
+label: Goal
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

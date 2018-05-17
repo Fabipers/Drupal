@@ -1,0 +1,11 @@
+uuid: 7bd82132-1eac-4b55-ac59-3c5c166ee144
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wFmF_NvB3GtDV4lWEkgRl2GycblGtAxNLRS25LQSD5s
+id: sub_program
+label: 'Sub program'
+icon_uuid: null
+description: 'Group of products.'
+behavior_plugins: {  }

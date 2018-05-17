@@ -1,0 +1,31 @@
+uuid: 38c03389-01fc-47ba-a7d1-7bd1be452b23
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_product
+    - paragraphs.paragraphs_type.product
+    - taxonomy.vocabulary.product
+_core:
+  default_config_hash: bpEeP_6ePV6a12rxmaKwUr0Bt2aPl6SiStDbtV3DW1c
+id: paragraph.product.product_product
+field_name: product_product
+entity_type: paragraph
+bundle: product
+label: Product
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      product: product
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

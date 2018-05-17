@@ -1,0 +1,21 @@
+uuid: 7193aed5-d203-4884-8d87-e8a92510532a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_baseline
+    - paragraphs.paragraphs_type.product
+_core:
+  default_config_hash: m5B6SnAs4Ouv8l2zQv6w-eja07hClRLAkIdjYd6P_E0
+id: paragraph.product.product_baseline
+field_name: product_baseline
+entity_type: paragraph
+bundle: product
+label: 'Product baseline'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

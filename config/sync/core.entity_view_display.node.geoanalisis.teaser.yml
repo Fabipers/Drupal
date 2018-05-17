@@ -1,0 +1,32 @@
+uuid: 68474177-d75d-4f5f-8e7e-6071f328d93d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.geoanalisis.body
+    - node.type.geoanalisis
+  module:
+    - text
+    - user
+id: node.geoanalisis.teaser
+targetEntityType: node
+bundle: geoanalisis
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_capa: true
+  field_ifr_subcapa: true
+  langcode: true
+  program_years: true

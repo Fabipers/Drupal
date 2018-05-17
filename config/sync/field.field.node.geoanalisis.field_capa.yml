@@ -1,0 +1,29 @@
+uuid: 405abc07-b65a-4cb3-be48-23278d72bf37
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capa
+    - node.type.geoanalisis
+  module:
+    - iframe
+id: node.geoanalisis.field_capa
+field_name: field_capa
+entity_type: node
+bundle: geoanalisis
+label: Capa
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: ''
+  frameborder: '0'
+  scrolling: 'no'
+  transparency: '0'
+  tokensupport: '0'
+  title: ''
+  height: ''
+  width: ''
+field_type: iframe

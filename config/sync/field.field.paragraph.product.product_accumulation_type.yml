@@ -1,0 +1,31 @@
+uuid: 48700b16-716d-4bab-8d20-e3edd2728bc2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_accumulation_type
+    - paragraphs.paragraphs_type.product
+    - taxonomy.vocabulary.accumulation_type
+_core:
+  default_config_hash: QbGKLw4qWGfSyIok0vOXcQo5FdV-j6XkN_POxNYrYto
+id: paragraph.product.product_accumulation_type
+field_name: product_accumulation_type
+entity_type: paragraph
+bundle: product
+label: 'Accumulation type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      accumulation_type: accumulation_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

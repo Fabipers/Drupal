@@ -1,0 +1,11 @@
+uuid: 4ab6b066-e970-43cc-aea9-16909978ec17
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iframe_arcgis
+id: node.iframe_arcgis
+target_entity_type_id: node
+target_bundle: iframe_arcgis
+default_langcode: site_default
+language_alterable: false

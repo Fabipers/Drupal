@@ -1,0 +1,31 @@
+uuid: bd28a106-2212-48ed-a568-62f2d732d786
+langcode: es
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.program_import
+    - field.storage.feeds_feed.program_import_years
+    - taxonomy.vocabulary.years
+_core:
+  default_config_hash: Px9MCZjph6o843FYXYoqfwqw9Hi4Bk37rdEsN3xO23A
+id: feeds_feed.program_import.program_import_years
+field_name: program_import_years
+entity_type: feeds_feed
+bundle: program_import
+label: Years
+description: 'Example: 2018, 2019, 2020, 2021'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      years: years
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 389a295f-c7f2-4fda-8e96-605bddba68e6
+langcode: es
+status: true
+dependencies:
+  module:
+    - feeds
+    - node
+_core:
+  default_config_hash: BJedBMbA6jlI49pS6wrQ4LHNbJMBjwxHA3lm0s0dc2c
+id: node.feeds_item
+field_name: feeds_item
+entity_type: node
+type: feeds_item
+settings:
+  target_type: feeds_feed
+module: feeds
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

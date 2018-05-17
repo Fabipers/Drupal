@@ -1,0 +1,9 @@
+uuid: f8f4ce26-fb59-448a-b1ae-9937f6e20221
+langcode: es
+status: true
+dependencies: {  }
+id: modulo
+label: Modulo
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

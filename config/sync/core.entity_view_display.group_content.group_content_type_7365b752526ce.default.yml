@@ -1,0 +1,48 @@
+uuid: 8048e6e5-5b77-48bc-bf34-2d56c87aaaa1
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.group_content_type_7365b752526ce
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - territorium_sub_menu
+        - territorium_group_iframe
+    fields:
+      territorium_sub_menu:
+        plugin_id: territorium_sub_menu
+        weight: 0
+        label: hidden
+        formatter: default
+      territorium_group_iframe:
+        plugin_id: territorium_group_iframe
+        weight: 1
+        label: hidden
+        formatter: default
+id: group_content.group_content_type_7365b752526ce.default
+targetEntityType: group_content
+bundle: group_content_type_7365b752526ce
+mode: default
+content: {  }
+hidden:
+  entity_id: true
+  langcode: true
+  uid: true

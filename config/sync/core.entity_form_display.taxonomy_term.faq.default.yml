@@ -1,0 +1,32 @@
+uuid: d6fa6c27-0a86-413a-b20c-e5807fa25523
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.faq.field_respuesta
+    - taxonomy.vocabulary.faq
+id: taxonomy_term.faq.default
+targetEntityType: taxonomy_term
+bundle: faq
+mode: default
+content:
+  field_respuesta:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true

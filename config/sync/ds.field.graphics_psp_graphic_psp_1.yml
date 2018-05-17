@@ -1,0 +1,17 @@
+id: graphics_psp_graphic_psp_1
+label: 'Graphics PSP: Graphic PSP 1'
+ui_limit: '*|*'
+properties:
+  block: 'views_block:graphics_psp-block_1'
+  use_block_title: true
+  config:
+    id: 'views_block:graphics_psp-block_1'
+    label: ''
+    provider: views
+    label_display: visible
+    views_label: ''
+    items_per_page: none
+type: block
+type_label: 'Block field'
+entities:
+  group_content: group_content

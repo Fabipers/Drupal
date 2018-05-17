@@ -1,0 +1,25 @@
+uuid: 980afd64-b09a-45a2-8ca7-6bfb1b46466e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_achievement
+    - paragraphs.paragraphs_type.product
+_core:
+  default_config_hash: kES3e_LGDfbYol_Dnl0DTvaSLiigFUQL9TAIewPrVZ4
+id: paragraph.product.product_achievement
+field_name: product_achievement
+entity_type: paragraph
+bundle: product
+label: 'Product achievement'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

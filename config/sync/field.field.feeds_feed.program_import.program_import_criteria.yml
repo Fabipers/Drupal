@@ -1,0 +1,31 @@
+uuid: 54d0db30-6a3f-4db4-b272-3694c7851bcb
+langcode: es
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.program_import
+    - field.storage.feeds_feed.program_import_criteria
+    - taxonomy.vocabulary.criteria
+_core:
+  default_config_hash: XWWNe5IX5y6fixGlld7qmxSXj0b5YymzCBbG-T5D8no
+id: feeds_feed.program_import.program_import_criteria
+field_name: program_import_criteria
+entity_type: feeds_feed
+bundle: program_import
+label: Criteria
+description: 'Define the criteria used in sub programs and products.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      criteria: criteria
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

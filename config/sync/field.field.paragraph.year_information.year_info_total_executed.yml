@@ -1,0 +1,25 @@
+uuid: 2e0310d5-e2f9-4718-b943-de2c7391b8ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.year_info_total_executed
+    - paragraphs.paragraphs_type.year_information
+_core:
+  default_config_hash: b2Bks7gIejJVqwZZh1bUm6D1PSWTLtbVDMDqzqOFciA
+id: paragraph.year_information.year_info_total_executed
+field_name: year_info_total_executed
+entity_type: paragraph
+bundle: year_information
+label: 'Total executed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

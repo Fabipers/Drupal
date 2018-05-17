@@ -1,0 +1,19 @@
+uuid: 3952290a-879a-419b-a864-7e047eb366f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.territorium
+    - node.type.program
+  module:
+    - gnode
+    - node
+id: territorium-group_node-program
+label: 'Territorium: Group node (Program)'
+description: 'Adds <em class="placeholder">Program</em> content to groups both publicly and privately.'
+group_type: territorium
+content_plugin: 'group_node:program'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

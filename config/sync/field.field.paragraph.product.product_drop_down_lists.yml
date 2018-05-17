@@ -1,0 +1,31 @@
+uuid: b27acb03-7ea1-40ba-aab2-235f31dff1b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_drop_down_lists
+    - paragraphs.paragraphs_type.product
+    - taxonomy.vocabulary.drop_down_lists
+_core:
+  default_config_hash: eQ6binuueLI2PMWdGknvOVT6mXX9yhbCD8cVSqXxbeM
+id: paragraph.product.product_drop_down_lists
+field_name: product_drop_down_lists
+entity_type: paragraph
+bundle: product
+label: 'Drop-down lists'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      drop_down_lists: drop_down_lists
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

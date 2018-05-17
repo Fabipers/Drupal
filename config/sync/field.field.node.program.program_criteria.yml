@@ -1,0 +1,31 @@
+uuid: ab285aef-7a1d-4df1-a771-58074cf138f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.program_criteria
+    - node.type.program
+    - taxonomy.vocabulary.criteria
+_core:
+  default_config_hash: EUbmaHqV3uqd4dLqOQn66ab4ePZoduEbe7-H4ZgJJLg
+id: node.program.program_criteria
+field_name: program_criteria
+entity_type: node
+bundle: program
+label: Criteria
+description: 'Define the criteria used in sub programs and products.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      criteria: criteria
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

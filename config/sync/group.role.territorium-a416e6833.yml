@@ -1,0 +1,17 @@
+uuid: 9fa962e8-3153-4128-9eac-bdc9b575d2b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.territorium
+  enforced:
+    config:
+      - user.role.administrator
+id: territorium-a416e6833
+label: Administrador
+weight: 2
+internal: true
+audience: outsider
+group_type: territorium
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,22 @@
+uuid: 698f6a6b-2db9-49ed-a04a-523fe82b71b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+_core:
+  default_config_hash: Q6PsjnyQsTi22-rfTYM3h9LTH3MW4A7-3Fxery6KZEE
+id: paragraph.year_info_year
+field_name: year_info_year
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

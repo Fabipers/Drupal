@@ -1,0 +1,47 @@
+uuid: d7ab9e42-2fe8-4ca1-8c6a-94dd5a42e93d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.group_content.territorium-group_node-program.field_geoanalisis
+    - group.content_type.territorium-group_node-program
+  module:
+    - path
+id: group_content.territorium-group_node-program.default
+targetEntityType: group_content
+bundle: territorium-group_node-program
+mode: default
+content:
+  entity_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  field_geoanalisis:
+    weight: 31
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

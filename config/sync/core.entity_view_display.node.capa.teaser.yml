@@ -1,0 +1,21 @@
+uuid: 61e9734d-9f8b-4bc5-905b-8df74da99ff3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.capa.field_geojson
+    - node.type.capa
+  module:
+    - user
+id: node.capa.teaser
+targetEntityType: node
+bundle: capa
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_geojson: true
+  langcode: true

@@ -1,0 +1,65 @@
+uuid: 29ba6ed0-354a-4761-9870-de73c4bbb548
+langcode: es
+status: true
+dependencies:
+  module:
+    - petrotau_general
+    - system
+name: interna_block
+label: 'Interna Block'
+group: Grupo
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  current_theme:
+    id: current_theme
+    theme: petrotau_theme
+    negate: 0
+    uuid: 2ce25021-722d-4fcb-a43a-fd3586219688
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '/group/*/content/*'
+    negate: 0
+    uuid: db1a19d0-7d0a-422a-83f1-6edf94105cd2
+    context_mapping: {  }
+  its_home:
+    id: its_home
+    home: {  }
+    negate: false
+    uuid: 73cf8ee9-8296-42d8-be00-7195498b9703
+reactions:
+  blocks:
+    blocks:
+      67bff898-935c-4653-bad9-5dd86095f2fc:
+        id: BloqueModule
+        label: 'Bloque Modulos'
+        provider: petrotau_group
+        label_display: 0
+        region: footer_filters
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: interna_block
+        uuid: 67bff898-935c-4653-bad9-5dd86095f2fc
+      0c6bf62e-5e86-4a6d-a65d-9515d7a4a1c5:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: interna_block
+        uuid: 0c6bf62e-5e86-4a6d-a65d-9515d7a4a1c5
+    id: blocks
+    saved: false
+    uuid: fabe8f9d-df7f-4c5f-9324-bb3049277b9f
+    include_default_blocks: 0
+weight: 0

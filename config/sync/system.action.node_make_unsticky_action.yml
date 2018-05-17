@@ -1,0 +1,13 @@
+uuid: ae8585f7-0bc2-4932-8d0f-d03e64d7d649
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: lDM9mvIGAu8Sw8rt-uCO4Sr7yX5VPrDPxYcawkbKd6k
+id: node_make_unsticky_action
+label: 'Hacer que el contenido no sea fijo al principio de las listas'
+type: node
+plugin: node_make_unsticky_action
+configuration: {  }

@@ -1,0 +1,14 @@
+uuid: f2ec5a18-b2fd-4597-b306-84efedf9ab65
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresa
+id: empresa-anonymous
+label: Anónimo
+weight: -102
+internal: true
+audience: anonymous
+group_type: empresa
+permissions_ui: true
+permissions: {  }

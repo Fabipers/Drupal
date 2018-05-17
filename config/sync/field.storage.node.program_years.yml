@@ -1,0 +1,22 @@
+uuid: 113145d5-ca5f-4a76-ae91-f7f058ed9080
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: 2xlt6k6nS7Qh-7tCbINtxvw0lm1qpRfEuMOHoBq9xIQ
+id: node.program_years
+field_name: program_years
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

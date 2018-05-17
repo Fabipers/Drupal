@@ -1,0 +1,30 @@
+uuid: 76cd147c-5ac9-41ef-8256-22627cb84ba5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.program.feeds_item
+    - field.field.node.program.program_criteria
+    - field.field.node.program.program_sub_program
+    - field.field.node.program.program_years
+    - node.type.program
+  module:
+    - user
+_core:
+  default_config_hash: 9n5aQFJ3gvccqLIceGmkmQmbSGX6FGd0sunuLvezvh8
+id: node.program.teaser
+targetEntityType: node
+bundle: program
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  program_criteria: true
+  program_sub_program: true
+  program_years: true
+  years: true

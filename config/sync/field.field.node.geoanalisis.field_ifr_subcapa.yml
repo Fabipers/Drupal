@@ -1,0 +1,29 @@
+uuid: 19a7497a-3413-4935-b7ad-f49667fbc8f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ifr_subcapa
+    - node.type.geoanalisis
+  module:
+    - iframe
+id: node.geoanalisis.field_ifr_subcapa
+field_name: field_ifr_subcapa
+entity_type: node
+bundle: geoanalisis
+label: Subcapa
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: ''
+  frameborder: '0'
+  scrolling: 'no'
+  transparency: '0'
+  tokensupport: '0'
+  title: ''
+  height: ''
+  width: ''
+field_type: iframe

@@ -1,0 +1,22 @@
+uuid: d29ce796-19e9-4113-8f20-3da62b917bc3
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Oe7Rq8wLkV6edBsDDkLFLSafNDy7K2qMop3nHoWxeus
+id: paragraph.product_year_efficacy
+field_name: product_year_efficacy
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

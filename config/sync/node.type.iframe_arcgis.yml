@@ -1,0 +1,18 @@
+uuid: e66f74db-7a20-43fc-9a95-875e0211866b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: iframe_arcgis
+type: iframe_arcgis
+description: 'iframe de mapa'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

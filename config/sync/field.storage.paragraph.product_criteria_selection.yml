@@ -1,0 +1,20 @@
+uuid: c531ca74-ab51-4519-a7e4-0d155882d3b4
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: f-y88AnB94NcPsNWDTlbwl5fnF0oq83rdE0UlQHlY2w
+id: paragraph.product_criteria_selection
+field_name: product_criteria_selection
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

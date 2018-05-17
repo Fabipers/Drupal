@@ -1,0 +1,67 @@
+header:
+  cabecera: 'Bienvenido a Territorium'
+  slogan: 'Consulta, Administra y Planea fácilmente.'
+  images:
+    - '60'
+features:
+  accommodation_0:
+    title: Control
+    text: 'Centraliza la información en forma estructurada en cabeza de tomadores de decisiones.'
+  accommodation_1:
+    title: Tiempo
+    text: 'Optimiza los procesos de levantamiento y procesamiento de información.'
+  accommodation_2:
+    title: Visibilidad
+    text: 'Permite mostrar la gestión de la Administración del Municipio de manera inmediata. Es un recurso multimedia online, puede ser utilizado desde dispositivos móviles.'
+  accommodation_3:
+    title: Transparencia
+    text: 'La Información está permanente a disposición de la comunidad y organismos de control.'
+  accommodation_4:
+    title: ''
+    text: ''
+slider:
+  sl1:
+    title: 'Vérsatil y Fácil de usar!'
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer  galley of type and scrambled it to make a type specimen book. '
+  sl2:
+    title: 'Información y Funcionalidad Online'
+    text: 'Toda la información, todos los datos, en todos lados'
+  sl3:
+    title: 'ArcGis TERRITORIUM'
+    text: 'Sistema de Información Territorial Inteligente'
+modules:
+  md_0:
+    link: 'https://dev-54ta5gq-h2gxzfidskroi.us.platform.sh/'
+    text_link: Tierra
+    ico:
+      - '53'
+  md_1:
+    link: 'https://dev-54ta5gq-h2gxzfidskroi.us.platform.sh/'
+    text_link: Ambiental
+    ico:
+      - '54'
+  md_2:
+    link: 'https://dev-54ta5gq-h2gxzfidskroi.us.platform.sh/'
+    text_link: 'Obras Civiles'
+    ico:
+      - '55'
+  md_3:
+    link: 'https://dev-54ta5gq-h2gxzfidskroi.us.platform.sh/'
+    text_link: 'Obras Civiles'
+    ico:
+      - '58'
+  md_4:
+    link: ''
+    text_link: ''
+    ico: {  }
+map:
+  title: 'Administrar todos los bloques'
+  geojson:
+    - '56'
+footer:
+  text: 'Consulta, administra y planea fácilmente acompañado de los mejores consultores.'
+others:
+  img_profile:
+    - '57'
+  logo:
+    - '66'

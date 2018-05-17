@@ -1,0 +1,31 @@
+uuid: 8b9c16e8-78a4-4024-893f-6a0597567e13
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.program_years
+    - node.type.program
+    - taxonomy.vocabulary.years
+_core:
+  default_config_hash: JADeWqRzacX0SgrenAUlaFTWaZecoQQGTj5FvtYMA8c
+id: node.program.program_years
+field_name: program_years
+entity_type: node
+bundle: program
+label: Years
+description: 'Example: 2018, 2019, 2020, 2021'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      years: years
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

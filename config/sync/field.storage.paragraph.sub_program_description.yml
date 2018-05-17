@@ -1,0 +1,21 @@
+uuid: 9eca9d84-2125-4f06-a144-c9fd97007032
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Mk594lg_CFaYgfhfbC5vrkYghsQT04etk_YAAta8l1U
+id: paragraph.sub_program_description
+field_name: sub_program_description
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

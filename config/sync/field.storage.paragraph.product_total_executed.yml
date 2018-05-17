@@ -1,0 +1,22 @@
+uuid: 12628541-af8f-44e1-a946-27a392edb3cd
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: vNfcHESiuuDfB0WyG4X-HvIuWDp-0xKLNMXR-Brhi0s
+id: paragraph.product_total_executed
+field_name: product_total_executed
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

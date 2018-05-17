@@ -1,0 +1,21 @@
+uuid: df565883-8784-4126-af4e-b1e02059ba42
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_code_2
+    - paragraphs.paragraphs_type.product
+_core:
+  default_config_hash: '-JTFsXtoxdqG_y4NAhXwH5NPfHnziZFKOM1o9VKBYBs'
+id: paragraph.product.product_code_2
+field_name: product_code_2
+entity_type: paragraph
+bundle: product
+label: 'Code 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

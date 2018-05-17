@@ -1,0 +1,22 @@
+uuid: 3405b1f9-adc7-4550-8ad5-7392f8d3d421
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 3FnkfmpF9BPXMI0GRULkBjP1yyXZL_Cjsk6e-eV8OEI
+id: paragraph.product_goal
+field_name: product_goal
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

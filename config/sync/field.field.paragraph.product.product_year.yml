@@ -1,0 +1,39 @@
+uuid: 91505a37-4279-4beb-91a7-f2ce92e91be8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_year
+    - paragraphs.paragraphs_type.product
+    - paragraphs.paragraphs_type.year_information
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: YA8hhiSH2GcYWfIiNFaN2bA8mPIkKNahPmZe4FM4AUk
+id: paragraph.product.product_year
+field_name: product_year
+entity_type: paragraph
+bundle: product
+label: 'Year information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      year_information: year_information
+    target_bundles_drag_drop:
+      product:
+        weight: 4
+        enabled: false
+      sub_program:
+        weight: 5
+        enabled: false
+      year_information:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

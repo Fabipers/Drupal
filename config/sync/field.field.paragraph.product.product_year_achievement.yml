@@ -1,0 +1,25 @@
+uuid: 1ddd8a4e-a59b-444a-a2bf-47aba241a79f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_year_achievement
+    - paragraphs.paragraphs_type.product
+_core:
+  default_config_hash: JBcp-EAUHXcmFfdApxDPTZXsyyJ9beOyOpYMjjHFBSI
+id: paragraph.product.product_year_achievement
+field_name: product_year_achievement
+entity_type: paragraph
+bundle: product
+label: 'Year achievement summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

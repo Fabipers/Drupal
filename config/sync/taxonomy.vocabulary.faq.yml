@@ -1,0 +1,9 @@
+uuid: aa816100-1a29-4a64-a246-4d033b82fafd
+langcode: es
+status: true
+dependencies: {  }
+name: Faq
+vid: faq
+description: 'Preguntas frecuentes'
+hierarchy: 0
+weight: 0

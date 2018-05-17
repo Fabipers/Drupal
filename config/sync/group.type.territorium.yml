@@ -1,0 +1,10 @@
+uuid: 330ee2fd-47ad-4eee-aa71-52330be33dc4
+langcode: es
+status: true
+dependencies: {  }
+id: territorium
+label: Territorium
+description: ''
+creator_membership: false
+creator_wizard: true
+creator_roles: {  }

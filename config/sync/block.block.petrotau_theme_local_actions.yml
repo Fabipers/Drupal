@@ -1,0 +1,20 @@
+uuid: 0f682276-632e-4a6f-a02c-825bc5494b26
+langcode: es
+status: true
+dependencies:
+  theme:
+    - petrotau_theme
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: petrotau_theme_local_actions
+theme: petrotau_theme
+region: header
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

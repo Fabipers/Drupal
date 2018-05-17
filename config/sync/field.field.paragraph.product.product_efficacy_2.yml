@@ -1,0 +1,25 @@
+uuid: 6d97bd0f-d5c2-4784-bab0-1a5384f10f0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_efficacy_2
+    - paragraphs.paragraphs_type.product
+_core:
+  default_config_hash: YqIKw6F_oNe_nT6WUQGd70q5Soxmo8IHOPyko1nIwek
+id: paragraph.product.product_efficacy_2
+field_name: product_efficacy_2
+entity_type: paragraph
+bundle: product
+label: 'Product efficacy 2 (product_total_executed / product_programmed_value)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

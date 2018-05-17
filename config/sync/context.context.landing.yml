@@ -1,0 +1,55 @@
+uuid: f798f4e0-040c-4a47-960f-0062c9e82986
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+    - system
+name: landing
+label: 'Petrotau Landing'
+group: Grupo
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  current_theme:
+    id: current_theme
+    theme: petrotau_theme
+    negate: 0
+    uuid: 0ad35c9a-7ad1-4c2a-bfd2-1b1abdf3cd95
+    context_mapping: {  }
+  group_type:
+    id: group_type
+    group_types:
+      empresa: empresa
+    negate: 0
+    uuid: 1a83bce4-e721-4b29-89ac-441473ece872
+    context_mapping:
+      group: '@group.group_route_context:group'
+  request_path:
+    id: request_path
+    pages: "/group/*/*\r\n/group/*/*/*"
+    negate: 1
+    uuid: 42e96e54-e03d-4cad-92a0-4b4d849dabd2
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      16b13b66-5a5f-41a7-aed5-a282817f9f07:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: content_top
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: landing
+        uuid: 16b13b66-5a5f-41a7-aed5-a282817f9f07
+    id: blocks
+    saved: false
+    uuid: e5e122f1-98fd-4c5b-a090-14a4ef26bf10
+    include_default_blocks: 0
+weight: 0

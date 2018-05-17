@@ -1,0 +1,19 @@
+uuid: ddb995a2-eb0c-4ea3-a7b9-579ab0e8ed3e
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: WSiUf93DWOBHvhI7cnDX0aMo9GzH8JxUSCZK5cGoLPQ
+name: Program
+type: program
+description: 'Programs that are represented or imported as an excel spreadsheet'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

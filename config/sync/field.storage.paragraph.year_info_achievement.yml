@@ -1,0 +1,22 @@
+uuid: 27de3d91-6de3-43d7-8911-95a3ebb5bbeb
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: hXg9Qm9xrdmsJgGOqv7V3R9ncQDvVsT2B5VZm5M8jTM
+id: paragraph.year_info_achievement
+field_name: year_info_achievement
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,31 @@
+uuid: d3bbcefb-9ff8-40fb-9f19-119f626b445a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_goal_status
+    - paragraphs.paragraphs_type.product
+    - taxonomy.vocabulary.goal_status
+_core:
+  default_config_hash: Sm8_1oh_BvEztbxWFHPOWyzBlLOwLNgxGX3Vwc36l4Q
+id: paragraph.product.product_goal_status
+field_name: product_goal_status
+entity_type: paragraph
+bundle: product
+label: 'Goal status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      goal_status: goal_status
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

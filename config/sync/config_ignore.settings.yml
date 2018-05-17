@@ -1,0 +1,6 @@
+ignored_config_entities:
+  0: petrotau_general.settings
+  2: territorium_general.settings
+_core:
+  default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
+langcode: es

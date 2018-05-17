@@ -1,0 +1,11 @@
+uuid: 3e611e10-5921-4ab6-a0e0-b02a4aee0f42
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: a1g2VZcU-VOxILfQeq-76_5gXQFGG8tq4K1pkANDwYM
+name: Years
+vid: years
+description: ''
+hierarchy: 0
+weight: 0

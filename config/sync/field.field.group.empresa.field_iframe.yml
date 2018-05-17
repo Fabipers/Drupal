@@ -1,0 +1,29 @@
+uuid: 44f0b0d1-a916-4d18-8e30-1a20c53d02c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_iframe
+    - group.type.empresa
+  module:
+    - iframe
+id: group.empresa.field_iframe
+field_name: field_iframe
+entity_type: group
+bundle: empresa
+label: Iframe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: ''
+  frameborder: '0'
+  scrolling: 'no'
+  transparency: '0'
+  tokensupport: '0'
+  title: ''
+  height: ''
+  width: ''
+field_type: iframe

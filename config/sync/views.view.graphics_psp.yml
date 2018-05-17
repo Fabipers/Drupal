@@ -1,0 +1,992 @@
+uuid: eac524c6-fe98-4343-a6d4-8072a6b2cb5f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sub_program_description
+    - node.type.program
+    - taxonomy.vocabulary.periodicity
+    - taxonomy.vocabulary.priority_level
+    - taxonomy.vocabulary.responsible_entity
+  module:
+    - charts
+    - node
+    - paragraphs
+    - taxonomy
+    - user
+_core:
+  default_config_hash: OWFRfTFrPJwrwFOSj1Pr6k5Pmy4nMRZyQeSG7Oj8FHo
+id: graphics_psp
+label: 'Graphics PSP'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+core: 8.x
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: none
+        options:
+          items_per_page: null
+          offset: 0
+      style:
+        type: chart
+        options:
+          grouping: {  }
+          library: highcharts
+          type: bar
+          label_field: sub_program_description
+          fields:
+            table: ''
+          data_fields:
+            sub_program_description: 0
+            product_programmed_value: product_programmed_value
+            product_total_executed: product_total_executed
+          field_colors:
+            sub_program_description: '#2f7ed8'
+            product_programmed_value: '#43a841'
+            product_total_executed: '#b93417'
+          title: ''
+          title_position: out
+          tooltips: ''
+          data_labels: 'TRUE'
+          legend_position: right
+          background: ''
+          three_dimensional: 0
+          polar: 0
+          width: ''
+          height: ''
+          xaxis_title: ''
+          xaxis_labels_rotation: '0'
+          yaxis_title: ''
+          yaxis_min: ''
+          yaxis_max: ''
+          yaxis_prefix: ''
+          yaxis_suffix: ''
+          yaxis_decimal_count: ''
+          yaxis_labels_rotation: '0'
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      fields:
+        sub_program_description:
+          id: sub_program_description
+          table: paragraph__sub_program_description
+          field: sub_program_description
+          relationship: program_sub_program
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        product_programmed_value:
+          id: product_programmed_value
+          table: paragraph__product_programmed_value
+          field: product_programmed_value
+          relationship: sub_program_product
+          group_type: sum
+          admin_label: ''
+          label: 'TOTAL PROGRAMADO CUATRIENIO'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          click_sort_column: value
+          type: number_decimal
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+            decimal_separator: .
+            scale: 2
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          field_api_classes: false
+          plugin_id: field
+        product_total_executed:
+          id: product_total_executed
+          table: paragraph__product_total_executed
+          field: product_total_executed
+          relationship: sub_program_product
+          group_type: sum
+          admin_label: ''
+          label: 'TOTAL EJECUTADO CUATRIENIO O FRACCIÓN'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          click_sort_column: value
+          type: number_decimal
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+            decimal_separator: .
+            scale: 2
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          field_api_classes: false
+          plugin_id: field
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            program: program
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        product_priority_level_target_id:
+          id: product_priority_level_target_id
+          table: paragraph__product_priority_level
+          field: product_priority_level_target_id
+          relationship: sub_program_product
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: product_priority_level_target_id_op
+            label: 'Nivel de prioridad Meta Producto'
+            description: ''
+            use_operator: false
+            operator: product_priority_level_target_id_op
+            identifier: product_priority_level_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: priority_level
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        product_responsible_entity_target_id:
+          id: product_responsible_entity_target_id
+          table: paragraph__product_responsible_entity
+          field: product_responsible_entity_target_id
+          relationship: sub_program_product
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: product_responsible_entity_target_id_op
+            label: 'Entidad Responsable'
+            description: ''
+            use_operator: false
+            operator: product_responsible_entity_target_id_op
+            identifier: product_responsible_entity_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: responsible_entity
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      sorts: {  }
+      title: ''
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships:
+        program_sub_program:
+          id: program_sub_program
+          table: node__program_sub_program
+          field: program_sub_program
+          relationship: none
+          group_type: group
+          admin_label: 'program_sub_program: Paragraph'
+          required: true
+          plugin_id: standard
+        sub_program_product:
+          id: sub_program_product
+          table: paragraph__sub_program_product
+          field: sub_program_product
+          relationship: program_sub_program
+          group_type: group
+          admin_label: 'sub_program_product: Paragraph'
+          required: true
+          plugin_id: standard
+      arguments: {  }
+      display_extenders: {  }
+      group_by: true
+      use_ajax: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.paragraph.sub_program_description'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: 'Graphic PSP 1'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.paragraph.sub_program_description'
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Graphic PSP 2'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      fields:
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: product_product
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          convert_spaces: false
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
+        product_programmed_value:
+          id: product_programmed_value
+          table: paragraph__product_programmed_value
+          field: product_programmed_value
+          relationship: sub_program_product
+          group_type: sum
+          admin_label: ''
+          label: 'TOTAL PROGRAMADO CUATRIENIO'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          click_sort_column: value
+          type: number_decimal
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+            decimal_separator: .
+            scale: 2
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          field_api_classes: false
+          plugin_id: field
+        product_total_executed:
+          id: product_total_executed
+          table: paragraph__product_total_executed
+          field: product_total_executed
+          relationship: sub_program_product
+          group_type: sum
+          admin_label: ''
+          label: 'TOTAL EJECUTADO CUATRIENIO O FRACCIÓN'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          click_sort_column: value
+          type: number_decimal
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+            decimal_separator: .
+            scale: 2
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          field_api_classes: false
+          plugin_id: field
+      defaults:
+        fields: false
+        relationships: false
+        filters: false
+        filter_groups: false
+        style: false
+        row: false
+      relationships:
+        program_sub_program:
+          id: program_sub_program
+          table: node__program_sub_program
+          field: program_sub_program
+          relationship: none
+          group_type: group
+          admin_label: 'program_sub_program: Paragraph'
+          required: true
+          plugin_id: standard
+        sub_program_product:
+          id: sub_program_product
+          table: paragraph__sub_program_product
+          field: sub_program_product
+          relationship: program_sub_program
+          group_type: group
+          admin_label: 'sub_program_product: Paragraph'
+          required: true
+          plugin_id: standard
+        product_product:
+          id: product_product
+          table: paragraph__product_product
+          field: product_product
+          relationship: sub_program_product
+          group_type: group
+          admin_label: 'product_product: Taxonomy term'
+          required: false
+          plugin_id: standard
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            program: program
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        program_sub_program_target_id:
+          id: program_sub_program_target_id
+          table: node__program_sub_program
+          field: program_sub_program_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: program_sub_program_target_id_op
+            label: SUBPROGRAMA
+            description: ''
+            use_operator: false
+            operator: program_sub_program_target_id_op
+            identifier: program_sub_program_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        product_periodicity_target_id:
+          id: product_periodicity_target_id
+          table: paragraph__product_periodicity
+          field: product_periodicity_target_id
+          relationship: sub_program_product
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: product_periodicity_target_id_op
+            label: Periodicidad
+            description: ''
+            use_operator: false
+            operator: product_periodicity_target_id_op
+            identifier: product_periodicity_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: periodicity
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        product_priority_level_target_id:
+          id: product_priority_level_target_id
+          table: paragraph__product_priority_level
+          field: product_priority_level_target_id
+          relationship: sub_program_product
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: product_priority_level_target_id_op
+            label: 'Nivel de prioridad Meta Producto'
+            description: ''
+            use_operator: false
+            operator: product_priority_level_target_id_op
+            identifier: product_priority_level_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: priority_level
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        product_responsible_entity_target_id:
+          id: product_responsible_entity_target_id
+          table: paragraph__product_responsible_entity
+          field: product_responsible_entity_target_id
+          relationship: sub_program_product
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: product_responsible_entity_target_id_op
+            label: 'Entidad Responsable'
+            description: ''
+            use_operator: false
+            operator: product_responsible_entity_target_id_op
+            identifier: product_responsible_entity_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: responsible_entity
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+      style:
+        type: chart
+        options:
+          grouping: {  }
+          library: highcharts
+          type: bar
+          label_field: name
+          fields:
+            table: ''
+          data_fields:
+            name: 0
+            product_programmed_value: product_programmed_value
+            product_total_executed: product_total_executed
+          field_colors:
+            name: '#2f7ed8'
+            product_programmed_value: '#43a841'
+            product_total_executed: '#b93417'
+          title: ''
+          title_position: out
+          tooltips: ''
+          data_labels: 'TRUE'
+          legend_position: right
+          background: ''
+          three_dimensional: 0
+          polar: 0
+          width: ''
+          height: ''
+          xaxis_title: ''
+          xaxis_labels_rotation: '0'
+          yaxis_title: ''
+          yaxis_min: ''
+          yaxis_max: ''
+          yaxis_prefix: ''
+          yaxis_suffix: ''
+          yaxis_decimal_count: ''
+          yaxis_labels_rotation: '0'
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

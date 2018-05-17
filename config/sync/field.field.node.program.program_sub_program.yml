@@ -1,0 +1,39 @@
+uuid: 8cb221bb-cb71-4000-bcf1-287173289c4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.program_sub_program
+    - node.type.program
+    - paragraphs.paragraphs_type.sub_program
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: s_nMC0tmZYYuhA9luDA9NVUjvN8k-sB6x3O4-_bxr_M
+id: node.program.program_sub_program
+field_name: program_sub_program
+entity_type: node
+bundle: program
+label: 'Sub program'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      sub_program: sub_program
+    target_bundles_drag_drop:
+      sub_program:
+        enabled: true
+        weight: 2
+      product:
+        weight: 3
+        enabled: false
+      year_information:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

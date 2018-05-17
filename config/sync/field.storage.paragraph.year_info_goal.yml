@@ -1,0 +1,22 @@
+uuid: 924c9fac-2ccc-49f7-8a2d-70926c9890c7
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: UNDL7SFgbZiGkzGDWB1ikTQYX9Ar6sKOsMV1V0SXiDo
+id: paragraph.year_info_goal
+field_name: year_info_goal
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

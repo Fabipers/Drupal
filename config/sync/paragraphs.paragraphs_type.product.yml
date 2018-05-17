@@ -1,0 +1,11 @@
+uuid: 41385304-844b-4b6f-a898-6c32016f829c
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1DTxPMHmuKtQyboo-8qi1OVt0oGB2AQIssM6hsPVFeY
+id: product
+label: Product
+icon_uuid: null
+description: 'Manage the referenced products in sub program.'
+behavior_plugins: {  }

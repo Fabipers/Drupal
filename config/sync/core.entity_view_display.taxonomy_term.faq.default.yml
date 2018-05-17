@@ -1,0 +1,30 @@
+uuid: 3581e298-1ae7-47a8-91de-359c1e2044fe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.faq.field_respuesta
+    - taxonomy.vocabulary.faq
+  module:
+    - text
+id: taxonomy_term.faq.default
+targetEntityType: taxonomy_term
+bundle: faq
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_respuesta:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  langcode: true

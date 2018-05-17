@@ -1,0 +1,27 @@
+uuid: 12925f93-3ad4-4b9c-ab4d-972abc2f03a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.videos_territorium
+    - core.entity_view_mode.block_content.home
+    - field.field.block_content.videos_territorium.body
+    - field.field.block_content.videos_territorium.field_id_video
+    - field.field.block_content.videos_territorium.field_video_youtube
+id: block_content.videos_territorium.home
+targetEntityType: block_content
+bundle: videos_territorium
+mode: home
+content:
+  field_id_video:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_video_youtube: true
+  langcode: true

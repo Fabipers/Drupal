@@ -1,0 +1,11 @@
+uuid: f32722d4-fe2d-4e78-8819-d9421b3d064b
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mzNDMvxSX1H41OlWekASq8TstxDK-wQaFbf610soOAk
+name: 'Goal status'
+vid: goal_status
+description: ''
+hierarchy: 0
+weight: 0

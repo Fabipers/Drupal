@@ -1,0 +1,19 @@
+uuid: 0d0c262a-9d93-4042-b2d2-37f419508369
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresa
+    - node.type.bloque
+  module:
+    - gnode
+    - node
+id: empresa-group_node-bloque
+label: 'Empresa: Group node (Bloque)'
+description: 'Adds <em class="placeholder">Bloque</em> content to groups both publicly and privately.'
+group_type: empresa
+content_plugin: 'group_node:bloque'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

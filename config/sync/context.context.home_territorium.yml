@@ -1,0 +1,57 @@
+uuid: 6c52eb61-ee50-47f6-b5a8-ecee9ad5aee1
+langcode: es
+status: true
+dependencies:
+  module:
+    - petrotau_general
+    - system
+name: home_territorium
+label: 'Home territorium'
+group: Home
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  current_theme:
+    id: current_theme
+    theme: petrotau_theme
+    negate: 0
+    uuid: b5ae67ca-6dfc-4f87-8893-6e8748b369e6
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: 0
+    uuid: f02f87f2-59ea-48c6-ab47-3a8082162877
+    context_mapping: {  }
+  its_home:
+    id: its_home
+    home:
+      2: '2'
+      1: 0
+    negate: 0
+    uuid: 6d152d97-ac9b-4f72-8b76-074d3c7f00b3
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      ec34deb8-f83f-4434-8583-01ed32ad2563:
+        id: 'views_block:video_territorium-block_1'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: container-fluid
+        unique: 0
+        context_id: home_territorium
+        uuid: ec34deb8-f83f-4434-8583-01ed32ad2563
+    id: blocks
+    saved: false
+    uuid: 9623b8b3-057f-482b-a513-0a4079b9aa66
+    include_default_blocks: 0
+weight: 0

@@ -1,0 +1,38 @@
+uuid: 572db182-468f-4994-a013-e6f4f0fbd509
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_imagen_principal
+    - group.type.territorium
+  module:
+    - image
+id: group.territorium.field_imagen_principal
+field_name: field_imagen_principal
+entity_type: group
+bundle: territorium
+label: 'Imagen Principal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

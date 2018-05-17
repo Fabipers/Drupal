@@ -1,0 +1,22 @@
+uuid: ac7af733-effa-4d66-8e01-04a4355dece6
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: tLQpGS8cs0MHn-kAd0w_nRrCxFqjPFNE0octqBj6woU
+id: paragraph.product_programmed_value
+field_name: product_programmed_value
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

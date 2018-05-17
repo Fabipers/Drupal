@@ -1,0 +1,17 @@
+uuid: 2f79479e-f589-4298-9663-3fad8b362ba1
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Bloque
+type: bloque
+description: 'Este bloque contiene modulos de capas'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

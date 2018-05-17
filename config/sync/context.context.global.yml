@@ -1,0 +1,53 @@
+uuid: c3c305e9-54e8-415e-818b-c6d499193703
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+name: global
+label: Global
+group: global
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  current_theme:
+    id: current_theme
+    theme: petrotau_theme
+    negate: 0
+    uuid: d9f97b8e-85a3-411c-a298-1b9b3c47dae8
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      fdd5fc75-0431-48e6-a9fe-6db88f699d6e:
+        id: MenuAccount
+        label: 'Menu Account'
+        provider: petrotau_general
+        label_display: 0
+        region: navigation
+        weight: '0'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: global
+        uuid: fdd5fc75-0431-48e6-a9fe-6db88f699d6e
+      539671ac-f8d0-4949-8722-358d3afa01e9:
+        id: MenuAccount
+        label: 'Menu Account'
+        provider: petrotau_general
+        label_display: 0
+        region: header
+        weight: '10'
+        context_mapping: {  }
+        theme: petrotau_theme
+        css_class: ''
+        unique: 0
+        context_id: global
+        uuid: 539671ac-f8d0-4949-8722-358d3afa01e9
+    id: blocks
+    saved: false
+    uuid: e921bbf9-5530-42d5-9ec5-d6ec0bdca521
+    include_default_blocks: 0
+weight: 0

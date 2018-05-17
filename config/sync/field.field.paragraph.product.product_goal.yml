@@ -1,0 +1,25 @@
+uuid: e17190f9-2c3f-4554-9cbe-969137c27346
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.product_goal
+    - paragraphs.paragraphs_type.product
+_core:
+  default_config_hash: kAIEXenmhuXevg4TW63_7-xwiCsWDB6sV_Erkov-rpY
+id: paragraph.product.product_goal
+field_name: product_goal
+entity_type: paragraph
+bundle: product
+label: 'Product goal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal
