@@ -1,0 +1,11 @@
+uuid: b0b95ddf-3c4e-4fd0-b008-6b492673bcb0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rW0t1kwteKwncv1e51C6Hb5wIh1eM1RVELMwMdaxYIY
+name: 'Portfolio Tags'
+vid: portfolio_tags
+description: ''
+hierarchy: 0
+weight: 0

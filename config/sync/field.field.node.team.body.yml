@@ -1,0 +1,24 @@
+uuid: da1d8d47-4e14-4ffe-9e2c-798a7326b2e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.team
+  module:
+    - text
+_core:
+  default_config_hash: fcH86sm65IwjmvOEYFfNNIrKuqg28mqUA7FlluUEX8Y
+id: node.team.body
+field_name: body
+entity_type: node
+bundle: team
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

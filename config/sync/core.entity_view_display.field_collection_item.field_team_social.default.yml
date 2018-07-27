@@ -1,0 +1,32 @@
+uuid: 7957e53f-ea9e-4bf5-a93d-05587ea68884
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_team_social.field_team_social_icon
+    - field.field.field_collection_item.field_team_social.field_team_social_link
+    - field_collection.field_collection.field_team_social
+_core:
+  default_config_hash: UPCgkdHKeCJ29dq0QV-JxII9lnOYviyPKfU5luWDSQ0
+id: field_collection_item.field_team_social.default
+targetEntityType: field_collection_item
+bundle: field_team_social
+mode: default
+content:
+  field_team_social_icon:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_team_social_link:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

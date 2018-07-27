@@ -1,0 +1,27 @@
+uuid: 61b8cfb7-51c9-4641-a386-49c2cdb5f14b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.courses
+  module:
+    - gaviasthemer
+    - views
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: exposedformcoursescourse_filter
+theme: gavias_edmix
+region: other
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:courses-course_filter'
+settings:
+  id: 'views_exposed_filter_block:courses-course_filter'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

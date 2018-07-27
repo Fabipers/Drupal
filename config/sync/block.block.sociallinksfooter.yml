@@ -1,0 +1,29 @@
+uuid: 7323f96a-3dd4-4fff-b572-4344175f7472
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7e26e9e5-a2f4-4e12-9643-7c8954f954ef'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: sociallinksfooter
+theme: gavias_edmix
+region: before_footer
+weight: 0
+provider: null
+plugin: 'block_content:7e26e9e5-a2f4-4e12-9643-7c8954f954ef'
+settings:
+  id: 'block_content:7e26e9e5-a2f4-4e12-9643-7c8954f954ef'
+  label: 'Social links footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

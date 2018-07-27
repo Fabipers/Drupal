@@ -1,5 +1,5 @@
-uuid: cacdd5b2-49d4-454d-80c8-f3bcf3777197
-langcode: es
+uuid: 3068be15-5f72-4fb0-acf4-11af38c4598a
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,11 +7,11 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: HacS-nsDH7uyoKhQHNyV_MNRClmPVuhU_fWZgNuEyIs
+  default_config_hash: HDMjKTBWeuHvsV6i6VvULmfhiSjNzIH1hCoy5GuZD0E
 id: comments_recent
-label: 'Comentarios recientes'
+label: 'Recent comments'
 module: views
-description: 'Comentarios recientes.'
+description: 'Recent comments.'
 tag: default
 base_table: comment_field_data
 base_field: cid
@@ -51,6 +51,10 @@ display:
         type: fields
         options:
           default_field_elements: true
+          inline:
+            subject: subject
+            changed: changed
+          separator: ' '
           hide_empty: false
       relationships:
         node:
@@ -221,7 +225,7 @@ display:
           plugin_id: field
           entity_type: comment
           entity_field: cid
-      title: 'Comentarios recientes'
+      title: 'Recent comments'
       empty:
         area_text_custom:
           id: area_text_custom
@@ -232,7 +236,7 @@ display:
           admin_label: ''
           label: ''
           empty: true
-          content: 'No hay comentarios disponibles.'
+          content: 'No comments available.'
           tokenize: false
           plugin_id: text_custom
       display_extenders: {  }
@@ -249,8 +253,8 @@ display:
     display_title: Block
     position: 1
     display_options:
-      block_description: 'Comentarios recientes'
-      block_category: 'Listas (Views)'
+      block_description: 'Recent comments'
+      block_category: 'Lists (Views)'
       allow:
         items_per_page: true
       display_extenders: {  }

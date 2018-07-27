@@ -1,0 +1,21 @@
+uuid: d6978c4d-503e-4d17-8c22-fde1dfe80176
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_address
+    - node.type.event
+_core:
+  default_config_hash: lgweJagcIa6_TfvAG8y9YMZHnBCJXHUe2kotzKzzhEY
+id: node.event.field_event_address
+field_name: field_event_address
+entity_type: node
+bundle: event
+label: 'Event Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

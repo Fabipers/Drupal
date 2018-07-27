@@ -1,0 +1,21 @@
+uuid: e26cdc5e-d75e-474c-a333-e99d7e00a6af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_team_social_icon
+    - field_collection.field_collection.field_team_social
+_core:
+  default_config_hash: oFIGs2F_lCg62ag7CxaAPe7WfWE9dAMXt5XFAwfMvxY
+id: field_collection_item.field_team_social.field_team_social_icon
+field_name: field_team_social_icon
+entity_type: field_collection_item
+bundle: field_team_social
+label: 'Team Social Icon'
+description: 'Use class icon font <a target="_blank" href="http://fontawesome.io/icons/">Icon Awesome</a>, e.g: fa fa-facebook'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

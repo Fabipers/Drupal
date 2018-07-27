@@ -1,0 +1,24 @@
+uuid: 9a910ccd-3bd6-4e71-8c02-40bee34d286f
+langcode: en
+status: true
+dependencies:
+  module:
+    - gaviasthemer
+    - search
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: searchform
+theme: gavias_edmix
+region: search
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

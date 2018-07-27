@@ -1,5 +1,5 @@
-uuid: 2985a0fb-d80f-49c1-b09a-d2f3a0ca6e97
-langcode: es
+uuid: 66357344-3e7b-4940-82f9-b2949fc0e1bd
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: U9HspszLxcw6pZmRacFa6yDbbheyMN-We4fPbrWWHGg
 id: node_save_action
-label: 'Guardar contenido'
+label: 'Save content'
 type: node
-plugin: node_save_action
+plugin: 'entity:save_action:node'
 configuration: {  }

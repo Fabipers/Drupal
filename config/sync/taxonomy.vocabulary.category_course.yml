@@ -1,0 +1,11 @@
+uuid: 42480fe4-b368-4647-ba4e-d6e73be58284
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cS9Fn49GSm1C-2aEY9P4bz_bPwDmiIGBLG5rxlkgSNE
+name: 'Category Course'
+vid: category_course
+description: 'Category for course '
+hierarchy: 0
+weight: 0

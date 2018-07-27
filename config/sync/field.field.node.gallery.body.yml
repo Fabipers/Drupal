@@ -1,0 +1,24 @@
+uuid: 61bd1bfd-abe5-4552-894f-9e04e446901e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.gallery
+  module:
+    - text
+_core:
+  default_config_hash: IK3appwLhsxLrwJDGgu5IGgAxJ8qPd5a40M6x-keZ9A
+id: node.gallery.body
+field_name: body
+entity_type: node
+bundle: gallery
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,32 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+theme_skin: ''
+enable_customize: '1'
+sticky_menu: '0'
+site_layout: wide
+preloader: '0'
+default_header: header
+facebook: '#'
+twitter: '#'
+skype: '#'
+instagram: '#'
+dribbble: '#'
+linkedin: '#'
+pinterest: ''
+google: ''
+youtube: ''
+vimeo: ''
+tumblr: ''
+footer_fixed: ''
+footer_first_size: '3'
+footer_second_size: '2'
+footer_third_size: '3'
+footer_four_size: '4'
+customize_css: ''

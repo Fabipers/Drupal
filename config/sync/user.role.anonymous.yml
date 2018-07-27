@@ -1,17 +1,21 @@
-uuid: 9fee0adb-0123-403a-a5d4-c7a4ed8a92fc
-langcode: es
+uuid: 8e1079ec-8daa-4a4f-940f-7f4d1f814273
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
-label: 'Usuario anónimo'
+label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access cart'
+  - 'access checkout'
   - 'access comments'
-  - 'access in-place editing'
+  - 'access content'
   - 'access site-wide contact form'
-  - 'administer petrotau_main_menu'
+  - 'administer gavias_customize preview'
   - 'search content'
+  - 'subscribe to newsletters'
   - 'use text format restricted_html'
+  - 'view commerce_product'

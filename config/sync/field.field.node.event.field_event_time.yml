@@ -1,0 +1,21 @@
+uuid: 48d0f1a7-712e-41b7-9ace-3fdfc2e20555
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_time
+    - node.type.event
+_core:
+  default_config_hash: as50MwOs_6R6-zJSMZu618VCh_ADmvJ7JIB2R55k5TQ
+id: node.event.field_event_time
+field_name: field_event_time
+entity_type: node
+bundle: event
+label: 'Event Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

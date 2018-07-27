@@ -1,0 +1,8 @@
+uuid: 10b74000-d62a-4a75-af4e-b161ce890834
+langcode: en
+status: true
+dependencies: {  }
+id: menu-second
+label: 'Menu second'
+description: 'Menu of sidebar'
+locked: false

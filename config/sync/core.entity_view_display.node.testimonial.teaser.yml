@@ -1,0 +1,38 @@
+uuid: 6107891f-336a-4529-8be5-cb0e3386014d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonial.body
+    - field.field.node.testimonial.field_testimonial_avatar
+    - field.field.node.testimonial.field_testimonial_job
+    - field.field.node.testimonial.field_testimonial_name
+    - field.field.node.testimonial.field_testimonial_video
+    - node.type.testimonial
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: u34rbXv2RdLGplVXWLFbjeZWSjCGdNaEUWI1wMMFri0
+id: node.testimonial.teaser
+targetEntityType: node
+bundle: testimonial
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_testimonial_avatar: true
+  field_testimonial_job: true
+  field_testimonial_name: true
+  field_testimonial_video: true

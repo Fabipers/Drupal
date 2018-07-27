@@ -1,0 +1,24 @@
+uuid: 73a5c806-e69f-42af-bc1b-832c5a5334a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - gavias_sliderlayer
+    - gaviasthemer
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gaviassliderlayerslider1
+theme: gavias_edmix
+region: other
+weight: 0
+provider: null
+plugin: 'gavias_sliderlayer_block:gavias_sliderlayer_block____1'
+settings:
+  id: 'gavias_sliderlayer_block:gavias_sliderlayer_block____1'
+  label: 'Gavias SliderLayer - Slider #1'
+  provider: gavias_sliderlayer
+  label_display: '0'
+visibility: {  }

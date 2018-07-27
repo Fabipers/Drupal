@@ -1,0 +1,28 @@
+uuid: 57adbb1c-7834-4ef9-9a22-f76a7f45ca2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - gaviasthemer
+    - simplenews
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: simplenewssubscription
+theme: gavias_edmix
+region: footer_four
+weight: 0
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Simplenews subscription'
+  provider: simplenews
+  label_display: visible
+  newsletters:
+    default: default
+  message: 'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras eleifend egestas justo.'
+  unique_id: d8679eef-0a1b-4eaa-86cc-51db877b1a3c
+visibility: {  }

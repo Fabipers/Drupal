@@ -1,0 +1,9 @@
+uuid: e2437a24-63e7-4b15-9bbc-963537519ef9
+langcode: en
+status: true
+dependencies: {  }
+id: course
+label: Course
+orderItemType: default
+generateTitle: true
+traits: {  }

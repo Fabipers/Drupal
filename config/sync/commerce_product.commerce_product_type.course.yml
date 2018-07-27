@@ -1,0 +1,10 @@
+uuid: 4111d9e6-72ba-43b4-8d97-5462e270a588
+langcode: en
+status: true
+dependencies: {  }
+id: course
+label: Course
+description: ''
+variationType: course
+injectVariationFields: true
+traits: {  }

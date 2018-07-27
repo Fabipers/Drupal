@@ -1,0 +1,29 @@
+uuid: 92349e14-b9ea-4d23-8506-3900f823ed87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post_category
+    - node.type.article
+    - taxonomy.vocabulary.category
+_core:
+  default_config_hash: 2vaeESKhCghdLd_t6DJLdw36QfV4Wae3c0q7rThCGYo
+id: node.article.field_post_category
+field_name: field_post_category
+entity_type: node
+bundle: article
+label: 'Post Category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      category: category
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

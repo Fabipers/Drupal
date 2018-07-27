@@ -1,0 +1,20 @@
+uuid: a7e6f033-e45e-4d7e-892c-d917b628c941
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gavias_edmix
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: gavias_edmix_local_actions
+theme: gavias_edmix
+region: help
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

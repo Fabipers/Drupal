@@ -1,0 +1,21 @@
+uuid: 2624bcb2-d450-49a9-821b-bf19594ef89a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_team_social_link
+    - field_collection.field_collection.field_team_social
+_core:
+  default_config_hash: o-mzGWBHQ4Nu6xnWqagGZGOJwxPxpoWWJhfgoh4XQTA
+id: field_collection_item.field_team_social.field_team_social_link
+field_name: field_team_social_link
+entity_type: field_collection_item
+bundle: field_team_social
+label: 'Team Social Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

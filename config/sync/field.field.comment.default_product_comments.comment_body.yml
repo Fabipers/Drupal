@@ -1,0 +1,21 @@
+uuid: bec35af1-af26-46f9-9743-0bc6836c1682
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.default_product_comments
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.default_product_comments.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: default_product_comments
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

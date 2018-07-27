@@ -1,0 +1,24 @@
+uuid: 4bc43d56-3f4d-4b6a-b396-c095faaaa2eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: messages
+theme: gavias_edmix
+region: help
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

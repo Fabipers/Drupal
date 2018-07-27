@@ -1,5 +1,5 @@
-uuid: bc2934e2-1a31-4dcc-82e6-14274c79e4c4
-langcode: es
+uuid: 6fd29e40-29e6-4371-894e-0e6108373ec7
+langcode: en
 status: true
 dependencies:
   config:
@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: Gy5PaLdfFhtFSRqJxV-DBTF5AocKgNA2CsCNNEbvx4c
 id: taxonomy_term
-label: 'Término de taxonomía'
+label: 'Taxonomy term'
 module: taxonomy
-description: 'Contenido perteneciente a determinado término de taxonomía.'
+description: 'Content belonging to a certain taxonomy term.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -256,7 +256,7 @@ display:
       tags: {  }
   feed_1:
     id: feed_1
-    display_title: Agregador
+    display_title: Feed
     display_plugin: feed
     position: 2
     display_options:

@@ -1,5 +1,4 @@
 admin: seven
-default: petrotau_theme
+default: gavias_edmix
 _core:
   default_config_hash: fOjer9hADYYnbCJVZMFZIIM1azTFWyg84ZkFDHfAbUg
-langcode: es

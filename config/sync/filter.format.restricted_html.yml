@@ -1,32 +1,45 @@
-uuid: 18c1db89-3a4a-415c-aefe-2ab6dbff968d
-langcode: es
+uuid: fcdd228c-9c20-4a63-a0f1-50ab8d5d2c44
+langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - gavias_blockbuilder
 _core:
   default_config_hash: KUjJ8Ti_ZJSlhGM88E_mhJP-8mmQRNUB6RFof615Kt0
-name: 'HTML Restringido'
+name: 'Restricted HTML'
 format: restricted_html
-weight: 0
+weight: -8
 filters:
   filter_html:
     id: filter_html
     provider: filter
-    status: true
+    status: false
     weight: -10
     settings:
       allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id>'
       filter_html_help: true
       filter_html_nofollow: false
-  filter_autop:
-    id: filter_autop
+  filter_align:
+    id: filter_align
     provider: filter
     status: true
     weight: 0
     settings: {  }
-  filter_url:
-    id: filter_url
+  filter_caption:
+    id: filter_caption
     provider: filter
     status: true
     weight: 0
-    settings:
-      filter_url_length: 72
+    settings: {  }
+  shortcode:
+    id: shortcode
+    provider: gavias_blockbuilder
+    status: true
+    weight: 0
+    settings: {  }
+  shortcode_corrector:
+    id: shortcode_corrector
+    provider: gavias_blockbuilder
+    status: true
+    weight: 0
+    settings: {  }

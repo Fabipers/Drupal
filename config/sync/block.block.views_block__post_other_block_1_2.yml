@@ -1,0 +1,36 @@
+uuid: 08057e42-8687-47ed-89c5-48f3a1dd6923
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.post_other
+  module:
+    - ctools
+    - gaviasthemer
+    - views
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: views_block__post_other_block_1_2
+theme: gavias_edmix
+region: sidebar_right
+weight: -8
+provider: null
+plugin: 'views_block:post_other-block_1'
+settings:
+  id: 'views_block:post_other-block_1'
+  label: 'Recent Posts'
+  provider: views
+  label_display: visible
+  views_label: 'Recent Posts'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      gallery: gallery
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

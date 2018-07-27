@@ -1,0 +1,19 @@
+uuid: 83edba8d-dbdf-4413-b62b-188dcd0699f7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hj6zGNwndnW_J6lKfFcg-tY5e5YqWfgXyt0qioGtXL8
+name: 'Default newsletter'
+id: default
+description: 'This is an example newsletter. Change it.'
+format: plain
+priority: 0
+receipt: true
+from_name: 'Sanbro - Responsive Business Service Drupal Theme '
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: youremail@gmail.com
+hyperlinks: false
+new_account: none
+opt_inout: double
+weight: 0

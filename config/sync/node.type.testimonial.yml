@@ -1,0 +1,20 @@
+uuid: 2806010c-161c-48fd-90ee-223801db238c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: IhpJv1OaOQhNj6yl8dLslKbWGWgDV47vRJ2A1Lw9O2c
+name: Testimonial
+type: testimonial
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

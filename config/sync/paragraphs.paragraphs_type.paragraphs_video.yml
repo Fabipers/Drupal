@@ -1,0 +1,9 @@
+uuid: f4b1ed28-e373-429a-b0be-2184543ceb80
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_video
+label: 'Paragraphs Video'
+icon_uuid: null
+description: 'You can add embed video of youtube, vimeo, dailymotion, facebook, twitch Or upload your video.'
+behavior_plugins: {  }

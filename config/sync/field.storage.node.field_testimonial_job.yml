@@ -1,0 +1,23 @@
+uuid: 5a568f2f-7478-4aff-8008-00c9123f9345
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: iGLOutM2MyFt9Xubzy_MnX7jCTpI-wFPP4QAGrh3lUU
+id: node.field_testimonial_job
+field_name: field_testimonial_job
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

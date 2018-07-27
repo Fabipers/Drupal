@@ -1,15 +1,14 @@
-uuid: 091d7d6d-0f07-46a8-ab50-81d2d49fba1d
-name: PetroTau
-mail: harold.moreno@tauconsultores.com
+uuid: e652c8c3-1b8e-40bc-bced-de3282f72a01
+name: 'Edmix - Powerful Education, Courses Online Drupal 8 Theme'
+mail: youremail@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /home
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
-langcode: es
-default_langcode: es
+langcode: en
+default_langcode: en
 _core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
-mail_notification: ''
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

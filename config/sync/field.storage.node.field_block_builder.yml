@@ -1,0 +1,21 @@
+uuid: 1c2f7307-dbb7-4532-92ef-4828614851db
+langcode: en
+status: true
+dependencies:
+  module:
+    - gavias_blockbuilder
+    - node
+_core:
+  default_config_hash: 3y8-3Wb6d-Bb0c4txwduNUW_-A67Ihy2wc5BwtP3Oac
+id: node.field_block_builder
+field_name: field_block_builder
+entity_type: node
+type: blockbuilder
+settings: {  }
+module: gavias_blockbuilder
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

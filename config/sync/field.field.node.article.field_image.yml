@@ -1,5 +1,5 @@
-uuid: 0923b2d4-1715-490f-a78a-fbc8026e7321
-langcode: es
+uuid: f9eb84b1-8fbf-423a-8f80-d6ffc365ddff
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,24 +13,24 @@ id: node.article.field_image
 field_name: field_image
 entity_type: node
 bundle: article
-label: Imagen
+label: Image
 description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_directory: articles
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true
+  alt_field_required: false
   title_field: false
-  alt_field_required: true
   title_field_required: false
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null

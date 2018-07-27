@@ -1,0 +1,20 @@
+uuid: 71632fc0-1856-4be5-88c3-96ff64d1d8bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: IAUAV4m2qWnDIQNb37iX6_CUagOwgUdI3UONDXJ7nok
+name: Banner
+type: banner
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,5 +1,5 @@
-uuid: 920c5a05-8865-4096-b181-ca66dff05e8e
-langcode: es
+uuid: a2f07958-9a59-423d-a44e-6b7eaf24aba1
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
+  default_config_hash: zCrrHAjrsQgWjBXBsshAZjND21czBy8sH_L5v_xDKSA
 id: block_content.basic.default
 targetEntityType: block_content
 bundle: basic
@@ -18,8 +18,7 @@ content:
     label: hidden
     type: text_default
     weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  langcode: true
+    region: content
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: 2094af44-fb49-499c-88ca-e79477a61dce
+langcode: en
+status: true
+dependencies: {  }
+id: default_product_comments
+label: 'Default Product comments'
+target_entity_type_id: commerce_product
+description: ''

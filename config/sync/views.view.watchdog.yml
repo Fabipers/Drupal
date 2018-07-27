@@ -1,16 +1,14 @@
-uuid: e72db985-684a-4962-ae02-b672bba84e35
-langcode: es
+uuid: 06ef6513-c021-41aa-ba51-fa2b68f32431
+langcode: en
 status: true
 dependencies:
   module:
     - dblog
     - user
-_core:
-  default_config_hash: 3QZ9apklK6mQ7BzodmxzOxqO---2BCPtOLE3k9eQ0Is
 id: watchdog
-label: Guardián
+label: Watchdog
 module: views
-description: 'Mensajes recientes del registro'
+description: 'Recent log messages'
 tag: ''
 base_table: watchdog
 base_field: wid
@@ -40,7 +38,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtro
+          submit_button: Filter
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -151,7 +149,7 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: Icono
+          admin_label: Icon
           label: ''
           exclude: false
           alter:
@@ -250,7 +248,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Gravedad
+          label: Severity
           exclude: true
           alter:
             alter_text: false
@@ -349,7 +347,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Fecha
+          label: Date
           exclude: false
           alter:
             alter_text: false
@@ -401,7 +399,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Mensaje
+          label: Message
           exclude: false
           alter:
             alter_text: false
@@ -451,7 +449,7 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
-          label: Usuario
+          label: User
           exclude: false
           alter:
             alter_text: false
@@ -611,7 +609,7 @@ display:
           exposed: true
           expose:
             operator_id: severity_op
-            label: Gravedad
+            label: Severity
             description: ''
             use_operator: false
             operator: severity_op
@@ -650,7 +648,7 @@ display:
           expose:
             label: ''
           plugin_id: standard
-      title: 'Mensajes recientes del registro'
+      title: 'Recent log messages'
       header: {  }
       footer: {  }
       empty:
@@ -664,7 +662,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No hay mensajes disponibles.'
+            value: 'No log messages available.'
             format: basic_html
           plugin_id: text
       relationships:
@@ -685,7 +683,7 @@ display:
           1: AND
       css_class: admin-dblog
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -702,7 +700,7 @@ display:
       display_extenders: {  }
       path: admin/reports/dblog
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

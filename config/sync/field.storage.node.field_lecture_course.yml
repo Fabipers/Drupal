@@ -1,0 +1,20 @@
+uuid: d1533aa4-4971-4b37-a74f-c023cf0d0350
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - node
+id: node.field_lecture_course
+field_name: field_lecture_course
+entity_type: node
+type: entity_reference
+settings:
+  target_type: commerce_product
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

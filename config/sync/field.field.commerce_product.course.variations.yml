@@ -1,0 +1,24 @@
+uuid: fffabe66-c5c5-4026-a96a-81fdc88dec16
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.course
+    - commerce_product.commerce_product_variation_type.course
+    - field.storage.commerce_product.variations
+id: commerce_product.course.variations
+field_name: variations
+entity_type: commerce_product
+bundle: course
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - course
+field_type: entity_reference

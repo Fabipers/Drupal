@@ -1,0 +1,36 @@
+uuid: 117ec9fd-cb87-4c5b-8dfc-2f7c923664d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.post_other
+  module:
+    - ctools
+    - gaviasthemer
+    - views
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: views_block__post_other_block_1
+theme: gavias_edmix
+region: sidebar_right
+weight: -9
+provider: null
+plugin: 'views_block:post_other-block_1'
+settings:
+  id: 'views_block:post_other-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

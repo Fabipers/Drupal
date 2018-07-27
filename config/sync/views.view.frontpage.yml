@@ -1,5 +1,5 @@
-uuid: af0f0c94-5eef-4317-8071-5db51b95b5e8
-langcode: es
+uuid: 3938dce5-6a5d-44f2-adb2-7287eccea9f6
+langcode: en
 status: true
 dependencies:
   config:
@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
 id: frontpage
-label: 'Página principal'
+label: Frontpage
 module: node
-description: 'Todo el contenido promovido a la página principal.'
+description: 'All content promoted to the front page.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -31,7 +31,7 @@ display:
       empty:
         area_text_custom:
           admin_label: ''
-          content: 'Todavía no se ha creado contenido para la portada.'
+          content: 'No front page content has been created yet.'
           empty: true
           field: area_text_custom
           group_type: group
@@ -61,7 +61,7 @@ display:
           admin_label: ''
           label: ''
           empty: true
-          title: 'Bienvenido a [site:name]'
+          title: 'Welcome to [site:name]'
           plugin_id: title
       exposed_form:
         type: basic
@@ -179,8 +179,8 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ Anterior'
-            next: 'Siguiente >'
+            previous: '‹ Previous'
+            next: 'Next ›'
             first: '« First'
             last: 'Last »'
           quantity: 9
@@ -255,7 +255,7 @@ display:
   feed_1:
     display_plugin: feed
     id: feed_1
-    display_title: Agregador
+    display_title: Feed
     position: 2
     display_options:
       sitename_title: true

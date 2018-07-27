@@ -1,17 +1,17 @@
-uuid: 9c2fa106-2302-4a12-be3b-49e94f2b6613
-langcode: es
+uuid: 2ea4a17b-1123-4923-83e6-833b62506327
+langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_map1
+    - field.field.node.page.field_block_builder
     - node.type.page
   module:
-    - iframe
+    - gavias_blockbuilder
     - text
     - user
 _core:
-  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+  default_config_hash: oZ-7vpIJxjxL2up9B5KrJGD0lazQ9aN0P-fIPo6OrSU
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -20,29 +20,20 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 100
-    region: content
+    weight: 0
     settings: {  }
     third_party_settings: {  }
-  field_map1:
-    weight: 102
-    label: above
-    settings:
-      url: ''
-      title: ''
-      width: ''
-      height: ''
-      class: ''
-      expose_class: ''
-      frameborder: '0'
-      scrolling: auto
-      transparency: '0'
-      tokensupport: '0'
+    region: content
+  field_block_builder:
+    type: blockbuilder_formatter
+    weight: 2
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
-    type: iframe_default
     region: content
   links:
-    weight: 101
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
     region: content
-hidden:
-  langcode: true
+hidden: {  }

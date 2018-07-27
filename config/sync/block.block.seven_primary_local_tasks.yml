@@ -1,5 +1,5 @@
-uuid: 6512e8f9-7c05-41ae-9e70-ba246021045c
-langcode: es
+uuid: 256921b8-1560-4ee6-94df-618d360075ef
+langcode: en
 status: true
 dependencies:
   theme:
@@ -14,7 +14,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Solapas principales'
+  label: 'Primary tabs'
   provider: core
   label_display: '0'
   primary: true

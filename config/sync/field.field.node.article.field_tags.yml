@@ -1,5 +1,5 @@
-uuid: e1f29ad7-9bc9-44c3-ad55-814413f5bf71
-langcode: es
+uuid: f9d240c9-4362-433e-85b6-c4d23225f81c
+langcode: en
 status: true
 dependencies:
   config:
@@ -12,8 +12,8 @@ id: node.article.field_tags
 field_name: field_tags
 entity_type: node
 bundle: article
-label: Etiquetas
-description: 'Introduzca una lista separada por comas. Por ejemplo: Amsterdam, Mexico City, "Cleveland, Ohio"'
+label: Tags
+description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'
 required: false
 translatable: true
 default_value: {  }

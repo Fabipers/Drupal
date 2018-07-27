@@ -1,0 +1,22 @@
+uuid: 335d3b7a-f809-4bd3-af0c-10544dad755e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gavias_edmix
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: gavias_edmix_local_tasks
+theme: gavias_edmix
+region: help
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

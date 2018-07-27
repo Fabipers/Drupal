@@ -1,0 +1,9 @@
+uuid: 06cc943e-6ba6-4074-ba0d-b9551df4a693
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_images
+label: 'Paragraphs Images'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

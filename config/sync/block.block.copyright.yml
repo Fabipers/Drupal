@@ -1,0 +1,29 @@
+uuid: 37abdcb2-ef5c-4448-bc87-33f058da2a94
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:61f17841-749f-436d-9799-1dfeefd7ad43'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: copyright
+theme: gavias_edmix
+region: copyright
+weight: 0
+provider: null
+plugin: 'block_content:61f17841-749f-436d-9799-1dfeefd7ad43'
+settings:
+  id: 'block_content:61f17841-749f-436d-9799-1dfeefd7ad43'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

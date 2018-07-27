@@ -1,16 +1,16 @@
-uuid: 3cfbd6ea-86d9-4659-957b-7004f97ab51a
-langcode: es
+uuid: e0b21fb0-60cf-4125-b44f-c56c4672b316
+langcode: en
 status: true
 dependencies:
   module:
     - node
     - user
 _core:
-  default_config_hash: sqwEJaSgef4rCaRMf-JdNAdV_kCICU1SfQh5Wl2sUrc
+  default_config_hash: tDcmzGfShE0XJbfwJzyA6lJTUYC6X4iVu887dgoFfDg
 id: content_recent
-label: 'Contenido reciente'
+label: 'Recent content'
 module: node
-description: 'Contenido reciente.'
+description: 'Recent content.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -258,7 +258,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: date
-      title: 'Contenido reciente'
+      title: 'Recent content'
       header: {  }
       footer: {  }
       empty:
@@ -289,7 +289,7 @@ display:
       display_extenders: {  }
       use_more: false
       use_more_always: false
-      use_more_text: Más
+      use_more_text: More
       link_url: ''
       link_display: '0'
     cache_metadata:

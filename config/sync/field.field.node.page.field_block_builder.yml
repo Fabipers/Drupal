@@ -1,0 +1,25 @@
+uuid: d6c4fe08-77f7-41ca-92de-0a922194ae4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block_builder
+    - node.type.page
+  module:
+    - gavias_blockbuilder
+_core:
+  default_config_hash: OHNPm6alTVNXxdpgd_a1Xg7KDV9vd_OREmr5jHj6uD8
+id: node.page.field_block_builder
+field_name: field_block_builder
+entity_type: node
+bundle: page
+label: 'Block Builder'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    bid: '0'
+default_value_callback: ''
+settings: {  }
+field_type: blockbuilder

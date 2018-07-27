@@ -1,13 +1,20 @@
-uuid: 4b541722-03e5-4fca-9d6f-a02516ef19ca
-langcode: es
+uuid: 12ac40c0-086f-4a18-ad36-57ec8f7100d2
+langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: Artículo
+name: Article
 type: article
-description: 'Use los <em>artículos</em> para contenido que tenga relevancia temporal como las noticias o las publicaciones en blogs.'
+description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
 display_submitted: true

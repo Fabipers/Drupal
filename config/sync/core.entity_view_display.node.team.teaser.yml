@@ -1,0 +1,87 @@
+uuid: 8cbeeb18-6749-4cfb-becd-67ddef31e26c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.team.body
+    - field.field.node.team.field_team_contact
+    - field.field.node.team.field_team_description
+    - field.field.node.team.field_team_education
+    - field.field.node.team.field_team_email
+    - field.field.node.team.field_team_image
+    - field.field.node.team.field_team_name
+    - field.field.node.team.field_team_position
+    - field.field.node.team.field_team_quote
+    - field.field.node.team.field_team_social
+    - image.style.thumbnail
+    - node.type.team
+  module:
+    - field_collection
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: cBjSDnh2aZCqRquRjEDhMxLpkh4exY7Ey5ff_OY8OLc
+id: node.team.teaser
+targetEntityType: node
+bundle: team
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+    region: content
+  field_team_image:
+    type: image
+    weight: 6
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_team_name:
+    type: string
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_team_position:
+    type: string
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_team_quote:
+    type: basic_string
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_team_social:
+    type: field_collection_items
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_team_contact: true
+  field_team_description: true
+  field_team_education: true
+  field_team_email: true

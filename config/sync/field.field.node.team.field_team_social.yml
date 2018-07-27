@@ -1,0 +1,24 @@
+uuid: b2148d87-8b1c-4aef-85b8-4af0dd3375ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_social
+    - node.type.team
+  module:
+    - field_collection
+_core:
+  default_config_hash: PN6sx5NJ4QGIcjfq-A8pyYOrRIN8hyt45QeE9G5zJBM
+id: node.team.field_team_social
+field_name: field_team_social
+entity_type: node
+bundle: team
+label: 'Team Social'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

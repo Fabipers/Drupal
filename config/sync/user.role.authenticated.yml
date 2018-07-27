@@ -1,20 +1,24 @@
-uuid: 7c719b68-46c5-447b-804a-67513962cbd1
-langcode: es
+uuid: 6b2db863-3e30-469c-b468-ae286f9f1e62
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
-label: 'Usuario autenticado'
+label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access cart'
+  - 'access checkout'
   - 'access comments'
   - 'access content'
-  - 'access in-place editing'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'administer gavias_customize preview'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'subscribe to newsletters'
   - 'use text format basic_html'
+  - 'view commerce_product'

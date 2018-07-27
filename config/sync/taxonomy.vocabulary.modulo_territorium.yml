@@ -1,9 +1,0 @@
-uuid: 0ce56eab-12f1-49af-8886-939a71f6e879
-langcode: es
-status: true
-dependencies: {  }
-name: 'Modulo Territorium'
-vid: modulo_territorium
-description: ''
-hierarchy: 0
-weight: 0

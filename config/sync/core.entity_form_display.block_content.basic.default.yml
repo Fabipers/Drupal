@@ -1,5 +1,5 @@
-uuid: fda68090-1997-4cfa-a6bc-1e62c773d637
-langcode: es
+uuid: 141d9ff4-3eb5-4d61-bd26-7ce998151cd0
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: e1Nu5xXAuF_QplbBUhQBPLnYWvHtDX0MkZnpuCiY8uM
+  default_config_hash: kv6gwb6PJ8DcMSj5kgsd52qCIHl1xkxBDL5_AMm-g8k
 id: block_content.basic.default
 targetEntityType: block_content
 bundle: basic
@@ -17,25 +17,18 @@ content:
   body:
     type: text_textarea_with_summary
     weight: -4
-    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
   info:
     type: string_textfield
     weight: -5
-    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
     region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
 hidden: {  }

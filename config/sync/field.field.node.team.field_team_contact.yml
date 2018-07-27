@@ -1,0 +1,21 @@
+uuid: 73e7caa0-2e62-4ecf-abcf-1e2f886b3203
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_contact
+    - node.type.team
+_core:
+  default_config_hash: 7kJ48INcazEuETpnslpxRm7O_3Aaw_9w9Wl7VriEGeU
+id: node.team.field_team_contact
+field_name: field_team_contact
+entity_type: node
+bundle: team
+label: 'Team contact'
+description: 'Sample: Phone : 61 3 8376 6284 or Email : youremail@gmail.com'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

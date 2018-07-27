@@ -1,0 +1,21 @@
+uuid: c1d5b54f-6b2b-48ea-b942-3099e97ec740
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testimonial_job
+    - node.type.testimonial
+_core:
+  default_config_hash: sns7QdA4JoRwX5LfmOs03hjH5vQyCn1hmzrrkK2Cjd0
+id: node.testimonial.field_testimonial_job
+field_name: field_testimonial_job
+entity_type: node
+bundle: testimonial
+label: 'Testimonial job'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

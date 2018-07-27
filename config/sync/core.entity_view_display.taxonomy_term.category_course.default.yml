@@ -1,0 +1,15 @@
+uuid: eade2a13-c276-4d16-ab2a-bd4a4820b2cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.category_course
+_core:
+  default_config_hash: UgB29G95_zLVz2pTJJD3_s_nAa5jBbXVumj57oGBAvQ
+id: taxonomy_term.category_course.default
+targetEntityType: taxonomy_term
+bundle: category_course
+mode: default
+content: {  }
+hidden:
+  description: true

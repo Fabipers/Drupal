@@ -1,16 +1,14 @@
-uuid: 74f1287f-0cc1-4ef1-b337-bc603acc2148
-langcode: es
+uuid: 1e65f392-cf48-4c92-9a1f-95dc5970cd31
+langcode: en
 status: true
 dependencies:
   module:
     - comment
     - user
-_core:
-  default_config_hash: cCq1vjj1qmyd39oBIUyOe8YPDsobJ5fZRhp2Xy5O7lA
 id: comment
-label: Comentarios
+label: Comments
 module: comment
-description: 'Buscar y administrar comentarios.'
+description: 'Find and manage comments.'
 tag: default
 base_table: comment_field_data
 base_field: cid
@@ -180,7 +178,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Acción
+          action_title: Action
           include_exclude: include
           selected_actions:
             - comment_delete_action
@@ -194,7 +192,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Asunto
+          label: Subject
           exclude: false
           alter:
             alter_text: false
@@ -388,7 +386,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Enviado en'
+          label: 'Posted in'
           exclude: false
           alter:
             alter_text: false
@@ -681,7 +679,7 @@ display:
           exposed: true
           expose:
             operator_id: subject_op
-            label: Asunto
+            label: Subject
             description: ''
             use_operator: false
             operator: subject_op
@@ -693,6 +691,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -721,7 +720,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Nombre del autor'
+            label: 'Author name'
             description: ''
             use_operator: false
             operator: combine_op
@@ -733,6 +732,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -762,7 +762,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Idioma
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -806,7 +806,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: date
-      title: Comentarios
+      title: Comments
       header: {  }
       footer: {  }
       empty:
@@ -819,13 +819,13 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No hay comentarios disponibles.'
+          content: 'No comments available.'
           plugin_id: text_custom
       arguments: {  }
       display_extenders: {  }
       use_more: false
       use_more_always: true
-      use_more_text: más
+      use_more_text: more
       use_ajax: false
       hide_attachment_summary: false
       show_admin_links: true
@@ -860,19 +860,19 @@ display:
   page_published:
     display_plugin: page
     id: page_published
-    display_title: 'Comentarios publicados'
+    display_title: 'Published comments'
     position: 1
     display_options:
       path: admin/content/comment
       menu:
         type: tab
-        title: Comentarios
-        description: 'Comentarios publicados'
+        title: Comments
+        description: 'Comments published'
         parent: ''
         weight: 0
         context: '0'
         menu_name: admin
-      display_description: 'La lista de comentarios aprobados.'
+      display_description: 'The approved comments listing.'
       display_extenders: {  }
       exposed_block: false
       display_comment: ''
@@ -889,19 +889,19 @@ display:
   page_unapproved:
     display_plugin: page
     id: page_unapproved
-    display_title: 'Comentarios sin aprobar'
+    display_title: 'Unapproved comments'
     position: 2
     display_options:
       path: admin/content/comment/approval
       menu:
         type: tab
-        title: 'Comentarios sin aprobar'
-        description: 'Comentarios no aprobados'
+        title: 'Unapproved comments'
+        description: 'Comments unapproved'
         parent: ''
         weight: 1
         context: '0'
         menu_name: admin
-      display_description: 'La lista de comentarios no aprobados.'
+      display_description: 'The unapproved comments listing.'
       filters:
         status:
           id: status
@@ -954,7 +954,7 @@ display:
           exposed: true
           expose:
             operator_id: subject_op
-            label: Asunto
+            label: Subject
             description: ''
             use_operator: false
             operator: subject_op
@@ -966,6 +966,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -994,7 +995,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Nombre de autor'
+            label: 'Author Name'
             description: ''
             use_operator: false
             operator: combine_op
@@ -1006,6 +1007,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1035,7 +1037,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Idioma
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -1117,7 +1119,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Acción
+          action_title: Action
           include_exclude: include
           selected_actions:
             - comment_delete_action
@@ -1131,7 +1133,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Asunto
+          label: Subject
           exclude: false
           alter:
             alter_text: false
@@ -1325,7 +1327,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Enviado en'
+          label: 'Posted in'
           exclude: false
           alter:
             alter_text: false

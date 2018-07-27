@@ -1,5 +1,5 @@
-uuid: 42cb3309-a008-48c8-a0e1-44aa94e1aa44
-langcode: es
+uuid: bd221cf4-be55-423b-ac73-b0336bc30ece
+langcode: en
 status: false
 dependencies:
   config:
@@ -8,11 +8,11 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: _12Vkw1VGBz_s0_W_LLVCrBPpioNSnB6zcd1lUAQubM
+  default_config_hash: '-pCFOVfbt__jaohFffTLnVavh4OBC6CjREAnchiRomQ'
 id: glossary
-label: Glosario
+label: Glossary
 module: node
-description: 'Todo el contenido, alfabéticamente.'
+description: 'All content, by letter.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -176,7 +176,7 @@ display:
           id: changed
           table: node_field_data
           field: changed
-          label: 'Última actualización'
+          label: 'Last update'
           type: timestamp
           settings:
             date_format: long
@@ -360,11 +360,11 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      max-age: 0
+      max-age: -1
       tags: {  }
   attachment_1:
     id: attachment_1
-    display_title: Adjunto
+    display_title: Attachment
     display_plugin: attachment
     position: 2
     display_options:
@@ -428,7 +428,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      max-age: 0
+      max-age: -1
       tags: {  }
   page_1:
     id: page_1
@@ -442,7 +442,7 @@ display:
       path: glossary
       menu:
         type: normal
-        title: Glosario
+        title: Glossary
         weight: 0
         menu_name: main
         parent: ''
@@ -455,5 +455,5 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      max-age: 0
+      max-age: -1
       tags: {  }

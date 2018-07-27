@@ -1,0 +1,23 @@
+uuid: 46cfcfc3-2a5a-4f7a-adab-915ed8e5788a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: w4dCRLkn1PN0TmfsTyXqcKMMcXArbAkXZH00V1WCiiQ
+id: node.field_team_contact
+field_name: field_team_contact
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

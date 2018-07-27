@@ -1,5 +1,5 @@
-uuid: 0773d4e0-9e47-48e5-bc3a-9ec76a68c6d6
-langcode: es
+uuid: 686772bd-106b-48e4-a792-5f76e39f5896
+langcode: en
 status: true
 dependencies:
   config:
@@ -7,9 +7,10 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
+    - path
     - user
 _core:
-  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -24,6 +25,15 @@ content:
   language:
     weight: 0
     region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simplenews:
+    weight: 5
+    region: content
   timezone:
     weight: 6
     region: content
@@ -35,5 +45,4 @@ content:
     third_party_settings: {  }
     weight: -1
     region: content
-hidden:
-  langcode: true
+hidden: {  }

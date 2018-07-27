@@ -1,0 +1,45 @@
+uuid: d6cc33d9-59d1-4cbe-b323-622d59cf7f6d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9db6746c-07ed-4976-8d06-1a9a56f38e24'
+  module:
+    - block_content
+    - ctools
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: companypresentation
+theme: gavias_edmix
+region: sidebar_right
+weight: -6
+provider: null
+plugin: 'block_content:9db6746c-07ed-4976-8d06-1a9a56f38e24'
+settings:
+  id: 'block_content:9db6746c-07ed-4976-8d06-1a9a56f38e24'
+  label: ' Company presentation'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blogs-grid\r\n/blogs-masonry\r\n/gallery\r\n/portfolio\r\n/portfolio-1\r\n/portfolio-2\r\n/courses\r\n/course-filter\r\n/course-list\r\n/course-grid\r\n/contact\r\n/user/*"
+    negate: true
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      lesson: lesson
+      portfolio: portfolio
+      team: team
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
