@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_event_address
     - field.field.node.event.field_event_image
+    - field.field.node.event.field_event_map
     - field.field.node.event.field_event_start
     - field.field.node.event.field_event_time
     - image.style.medium
@@ -70,4 +71,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_event_map: true
+  langcode: true

@@ -23,5 +23,6 @@ content:
 hidden:
   billing_countries: true
   default_currency: true
+  langcode: true
   mail: true
   name: true

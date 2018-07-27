@@ -29,5 +29,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  langcode: true
   price: true
   sku: true

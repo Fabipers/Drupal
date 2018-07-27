@@ -90,3 +90,4 @@ content:
 hidden:
   comment: true
   field_post_embed: true
+  langcode: true

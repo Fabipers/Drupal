@@ -85,3 +85,4 @@ hidden:
   field_team_description: true
   field_team_education: true
   field_team_email: true
+  langcode: true

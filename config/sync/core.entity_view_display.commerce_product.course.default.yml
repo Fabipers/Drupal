@@ -110,6 +110,14 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
     weight: 10
@@ -120,5 +128,6 @@ content:
     region: content
 hidden:
   created: true
+  langcode: true
   stores: true
   uid: true

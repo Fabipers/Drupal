@@ -36,3 +36,4 @@ hidden:
   field_post_gallery: true
   field_post_type: true
   field_tags: true
+  langcode: true

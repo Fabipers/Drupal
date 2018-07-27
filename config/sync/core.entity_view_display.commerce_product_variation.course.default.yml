@@ -21,6 +21,7 @@ content:
       display_currency_code: false
     third_party_settings: {  }
 hidden:
+  langcode: true
   product_id: true
   sku: true
   title: true

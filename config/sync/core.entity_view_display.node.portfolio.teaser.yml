@@ -45,3 +45,4 @@ content:
 hidden:
   body: true
   field_portfolio_information: true
+  langcode: true

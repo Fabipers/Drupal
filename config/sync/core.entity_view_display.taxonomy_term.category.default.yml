@@ -13,3 +13,4 @@ mode: default
 content: {  }
 hidden:
   description: true
+  langcode: true
